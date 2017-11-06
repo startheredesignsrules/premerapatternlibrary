@@ -78,10 +78,6 @@
               Layout Grid
             </a>
 
-            <a class="mdc-list-item" href="#linearprogress">
-              Linear Progress
-            </a>
-
             <a class="mdc-list-item" href="#lists">
               Lists
             </a>
@@ -90,24 +86,12 @@
               Menus
             </a>
 
-            <a class="mdc-list-item" href="#ripples">
-              Ripples
-            </a>
-
-            <a class="mdc-list-item" href="#rtl">
-              RTL
-            </a>
-
             <a class="mdc-list-item" href="#snackbars">
               Snackbars
             </a>
 
             <a class="mdc-list-item" href="#tabs">
               Tabs
-            </a>
-
-            <a class="mdc-list-item" href="#theme">
-              Theme
             </a>
 
             <a class="mdc-list-item" href="#toolbars">
@@ -521,6 +505,7 @@ document.querySelector('#default-dialog-activation').addEventListener('click', f
               <div class="mdc-checkbox__mixedmark"></div>
             </div>
           </div>
+          <br><br>
 
           <div class="mdc-form-field">
             <div class="mdc-checkbox">
@@ -541,6 +526,7 @@ document.querySelector('#default-dialog-activation').addEventListener('click', f
 
             <label for="my-checkbox">My Checkbox Label</label>
           </div>
+          <br><br>
 
           <div class="mdc-checkbox mdc-checkbox--disabled">
             <input type="checkbox"
@@ -559,14 +545,381 @@ document.querySelector('#default-dialog-activation').addEventListener('click', f
             </div>
           </div>
           <label for="basic-disabled-checkbox" id="basic-disabled-checkbox-label">This is my disabled checkbox</label>
+          <br><br>
+
+          <h3>Example Code</h3>
+          <pre><code class="language-markup">
+            <script type="prism-html-markup">
+<div class="mdc-checkbox">
+  <input type="checkbox" class="mdc-checkbox__native-control"/>
+  <div class="mdc-checkbox__background">
+    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+      <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+    </svg>
+    <div class="mdc-checkbox__mixedmark"></div>
+  </div>
+</div>
+            </script>
+          </code></pre>
+          <br><br>
 
           <a href="#top">Back to top</a>
         </secton>
 
-        <!-- FORM FIELDS-->
+        <!-- FORM FIELDS -->
         <section class="pattern-section">
           <a name="form-fields"></a>
           <h2 class="mdc-typography--display2">Form Fields</h2>
+          <p>MDC Form Field provides an mdc-form-field helper class for easily making theme-aware, RTL-aware form field + label combos. It also provides an MDCFormField class for easily making input ripples respond to label events.</p>
+
+          <div class="mdc-form-field">
+            <input type="checkbox" id="input">
+            <label for="input">Input Label</label>
+          </div>
+          <br><br>
+
+          <div class="mdc-form-field mdc-form-field--align-end">
+            <input type="checkbox" id="input">
+            <label for="input">Input Label</label>
+          </div>
+          <br><br>
+
+          <h3>Example Code</h3>
+          <pre><code class="language-markup">
+            <script type="prism-html-markup">
+<div class="mdc-form-field">
+  <input type="checkbox" id="input">
+  <label for="input">Input Label</label>
+</div>
+
+<div class="mdc-form-field mdc-form-field--align-end">
+  <input type="checkbox" id="input">
+  <label for="input">Input Label</label>
+</div>
+            </script>
+          </code></pre>
+          <br><br>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- RADIO BUTTONS -->
+        <section class="pattern-section">
+          <a name="radio-buttons"></a>
+          <h2 class="mdc-typography--display2">Radio Buttons</h2>
+
+          <h3>Regular</h3>
+          <div class="mdc-radio">
+            <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label id="radio-1-label" for="radio-1">Radio 1</label>
+
+          <div class="mdc-radio">
+            <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label id="radio-2-label" for="radio-2">Radio 2</label>
+          <br><br>
+
+          <h3>Disabled</h3>
+          <div class="mdc-radio mdc-radio--disabled">
+            <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" disabled>
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label id="radio-1-label" for="radio-1">Disabled Radio 1</label>
+          <br><br>
+
+          <h3>Example Code</h3>
+          <pre><code class="language-markup">
+            <script type="prism-html-markup">
+<div class="mdc-radio">
+  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+  <div class="mdc-radio__background">
+    <div class="mdc-radio__outer-circle"></div>
+    <div class="mdc-radio__inner-circle"></div>
+  </div>
+</div>
+<label id="radio-1-label" for="radio-1">Radio 1</label>
+
+<div class="mdc-radio">
+  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+  <div class="mdc-radio__background">
+    <div class="mdc-radio__outer-circle"></div>
+    <div class="mdc-radio__inner-circle"></div>
+  </div>
+</div>
+<label id="radio-2-label" for="radio-2">Radio 2</label>
+            </script>
+          </code></pre>
+          <br><br>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- SELECT MENUS -->
+        <section class="pattern-section">
+          <a name="select-menus"></a>
+          <h2 class="mdc-typography--display2">Select Menus</h2>
+          <p>Blah</p>
+
+          <div class="mdc-select" role="listbox" tabindex="0">
+            <span class="mdc-select__selected-text">Pick a food group</span>
+            <div class="mdc-simple-menu mdc-select__menu">
+              <ul class="mdc-list mdc-simple-menu__items">
+                <li class="mdc-list-item" role="option" id="grains" aria-disabled="true">
+                  Pick a food group
+                </li>
+                <li class="mdc-list-item" role="option" id="grains" tabindex="0">
+                  Bread, Cereal, Rice, and Pasta
+                </li>
+                <li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
+                  Vegetables
+                </li>
+                <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
+                  Fruit
+                </li>
+                <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
+                  Milk, Yogurt, and Cheese
+                </li>
+                <li class="mdc-list-item" role="option" id="meat" tabindex="0">
+                  Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+                </li>
+                <li class="mdc-list-item" role="option" id="fats" tabindex="0">
+                  Fats, Oils, and Sweets
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br><br>
+
+          <h3>Example Code</h3>
+          <pre><code class="language-markup">
+            <script type="prism-html-markup">
+<div class="mdc-select" role="listbox" tabindex="0">
+  <span class="mdc-select__selected-text">Pick a food group</span>
+  <div class="mdc-simple-menu mdc-select__menu">
+    <ul class="mdc-list mdc-simple-menu__items">
+      <li class="mdc-list-item" role="option" id="grains" aria-disabled="true">
+        Pick a food group
+      </li>
+      <li class="mdc-list-item" role="option" id="grains" tabindex="0">
+        Bread, Cereal, Rice, and Pasta
+      </li>
+      <li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
+        Vegetables
+      </li>
+      <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
+        Fruit
+      </li>
+      <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
+        Milk, Yogurt, and Cheese
+      </li>
+      <li class="mdc-list-item" role="option" id="meat" tabindex="0">
+        Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+      </li>
+      <li class="mdc-list-item" role="option" id="fats" tabindex="0">
+        Fats, Oils, and Sweets
+      </li>
+    </ul>
+  </div>
+</div>
+            </script>
+          </code></pre>
+          <br><br><br><br>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- SLIDERS -->
+        <section class="pattern-section">
+          <a name="sliders"></a>
+          <h2 class="mdc-typography--display2">Sliders</h2>
+          <p>MDC sliders can get pretty complex, so the documentation can be found here https://material.io/components/web/catalog/input-controls/sliders/.</p>
+
+          <h3>Continuous Slider</h3>
+          <div class="mdc-slider" tabindex="0" role="slider"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+               aria-label="Select Value">
+            <div class="mdc-slider__track-container">
+              <div class="mdc-slider__track"></div>
+            </div>
+            <div class="mdc-slider__thumb-container">
+              <svg class="mdc-slider__thumb" width="21" height="21">
+                <circle cx="10.5" cy="10.5" r="7.875"></circle>
+              </svg>
+              <div class="mdc-slider__focus-ring"></div>
+            </div>
+          </div>
+          <br><br>
+
+          <h3>Discreet Slider</h3>
+          <div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+               aria-label="Select Value">
+            <div class="mdc-slider__track-container">
+              <div class="mdc-slider__track"></div>
+            </div>
+            <div class="mdc-slider__thumb-container">
+              <div class="mdc-slider__pin">
+                <span class="mdc-slider__pin-value-marker"></span>
+              </div>
+              <svg class="mdc-slider__thumb" width="21" height="21">
+                <circle cx="10.5" cy="10.5" r="7.875"></circle>
+              </svg>
+              <div class="mdc-slider__focus-ring"></div>
+            </div>
+          </div>
+          <br><br>
+
+          <h3>Example Code</h3>
+          <pre><code class="language-markup">
+            <script type="prism-html-markup">
+<div class="mdc-slider" tabindex="0" role="slider"
+     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+     aria-label="Select Value">
+  <div class="mdc-slider__track-container">
+    <div class="mdc-slider__track"></div>
+  </div>
+  <div class="mdc-slider__thumb-container">
+    <svg class="mdc-slider__thumb" width="21" height="21">
+      <circle cx="10.5" cy="10.5" r="7.875"></circle>
+    </svg>
+    <div class="mdc-slider__focus-ring"></div>
+  </div>
+</div>
+            </script>
+          </code></pre>
+          <br><br><br><br>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- SWITCHES -->
+        <section class="pattern-section">
+          <a name="switches"></a>
+          <h2 class="mdc-typography--display2">Switches</h2>
+          <p>Blah</p>
+
+          <h3>Enabled</h3>
+          <div class="mdc-switch">
+            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
+            <div class="mdc-switch__background">
+              <div class="mdc-switch__knob"></div>
+            </div>
+          </div>
+          <label for="basic-switch" class="mdc-switch-label">off/on</label>
+          <br><br>
+
+          <h3>Disabled</h3>
+          <div class="mdc-switch mdc-switch--disabled">
+            <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
+            <div class="mdc-switch__background">
+              <div class="mdc-switch__knob"></div>
+            </div>
+          </div>
+          <label for="another-basic-switch" class="mdc-switch-label">off/on</label>
+          <br><br>
+
+          <h3>Example Code</h3>
+          <pre><code class="language-markup">
+            <script type="prism-html-markup">
+<div class="mdc-switch">
+  <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
+  <div class="mdc-switch__background">
+    <div class="mdc-switch__knob"></div>
+  </div>
+</div>
+<label for="basic-switch" class="mdc-switch-label">off/on</label>
+
+<div class="mdc-switch mdc-switch--disabled">
+  <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
+  <div class="mdc-switch__background">
+    <div class="mdc-switch__knob"></div>
+  </div>
+</div>
+<label for="another-basic-switch" class="mdc-switch-label">off/on</label>
+            </script>
+          </code></pre>
+
+            <br><br><br><br>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- TEXT FIELDS -->
+        <section class="pattern-section">
+          <a name="text-fields"></a>
+          <h2 class="mdc-typography--display2">Text Fields</h2>
+          <p>Blah</p>
+
+          <div class="mdc-textfield">
+            <input type="text" id="my-textfield" class="mdc-textfield__input">
+            <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
+            <div class="mdc-textfield__bottom-line"></div>
+          </div>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- LAYOUT GRID -->
+        <section class="pattern-section">
+          <a name="layout-grid"></a>
+          <h2 class="mdc-typography--display2">Layout Grid</h2>
+          <p>Blah</p>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- LISTS -->
+        <section class="pattern-section">
+          <a name="lists"></a>
+          <h2 class="mdc-typography--display2">lists</h2>
+          <p>Blah</p>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- MENUS -->
+        <section class="pattern-section">
+          <a name="menus"></a>
+          <h2 class="mdc-typography--display2">Menus</h2>
+          <p>Blah</p>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- SNACKBARS -->
+        <section class="pattern-section">
+          <a name="snackbars"></a>
+          <h2 class="mdc-typography--display2">Snackbars</h2>
+          <p>Blah</p>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- TABS -->
+        <section class="pattern-section">
+          <a name="tabs"></a>
+          <h2 class="mdc-typography--display2">Tabs</h2>
+          <p>Blah</p>
+
+          <a href="#top">Back to top</a>
+        </secton>
+
+        <!-- TOOLBARS -->
+        <section class="pattern-section">
+          <a name="toolbars"></a>
+          <h2 class="mdc-typography--display2">Toolbars</h2>
           <p>Blah</p>
 
           <a href="#top">Back to top</a>
