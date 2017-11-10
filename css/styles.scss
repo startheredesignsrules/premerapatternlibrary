@@ -1,10 +1,58 @@
 :root {
   --mdc-theme-primary: #FF7C76;
-  --mdc-theme-secondary: #DDDDDD;
+  --mdc-theme-primary-light: red;
+  --mdc-theme-primary-dark: orange;
+  --mdc-theme-secondary: #FF7C76;
+  --mdc-theme-secondary-light: yellow;
+  --mdc-theme-secondary-dark:green;
   --mdc-theme-background: #fefefe;
+
+  --mdc-theme-text-primary-on-primary: white;
+  --mdc-theme-text-secondary-on-primary: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-primary: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-primary: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-primary: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-primary-on-primary-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-primary-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-primary-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-primary-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-primary-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-primary-dark: white;
+  --mdc-theme-text-secondary-on-primary-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-primary-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-primary-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-primary-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-primary-on-secondary: white;
+  --mdc-theme-text-secondary-on-secondary: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-secondary: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-secondary: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-secondary: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-primary-on-secondary-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-secondary-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-secondary-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-secondary-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-secondary-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-secondary-dark: white;
+  --mdc-theme-text-secondary-on-secondary-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-secondary-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-secondary-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-secondary-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-dark: white;
+  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
 }
-
-
 
 /* For the Pattern Library site only
 =============================================================== */
@@ -23,31 +71,30 @@ body {
   min-height: 100%;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 /* Make page layout float properly */
 .page-container {
   display: flex;
   flex: 1 1 auto;
   height: 100%;
   box-sizing: border-box;
+  max-width: 1366px;
 }
 
 .main-content {
-  padding: 0 40px;
+  padding: 40px;
+}
+
+.usage-section {
+  margin-bottom: 30px;
 }
 
 /* Make the top header not pink */
 .mdc-toolbar__row {
   background-color: #0099d8;
-}
-
-#card-example.mdc-card {
-  height: 450px; /* Note: Height works in conjunction with height of media below */
-  width: 350px;
-}
-
-#card-example-wide.mdc-card {
-  height: 380px; /* Note: Height works in conjunction with height of media below */
-  width: 650px;
 }
 
 .mdc-card .mdc-card__media {
@@ -70,6 +117,7 @@ body {
 /* Helper classes */
 .lead {
   font-size: 130%;
+  margin-bottom: 40px;
 }
 
 .code-container {
@@ -82,7 +130,6 @@ body {
 }
 
 .pattern-section {
-  border-top: 1px solid #DDD;
   margin-top: 120px;
   padding-top: 60px;
 }
@@ -98,4 +145,14 @@ body {
   margin-right: 10px;
 }
 
-/* Checkbox Colors */
+.mdc-layout-grid {
+  background-color: #EEEEEE;
+
+  .mdc-layout-grid__inner {
+    background-color: pink;
+
+    .mdc-layout-grid__cell {
+      background-color: #AAAAAA;
+    }
+  }
+}
