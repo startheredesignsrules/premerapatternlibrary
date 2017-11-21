@@ -54,7 +54,7 @@
   --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
 }
 
-/* For the Pattern Library site only
+/* PATTERN LIBRARY ONLY
 =============================================================== */
 
 /* Ensure layout covers the entire screen. */
@@ -155,7 +155,9 @@ header {
   }
 }
 
-/* Helper classes */
+/* HELPER CLASSES
+=============================================================== */
+
 .lead {
   font-size: 130%;
   margin-bottom: 40px;
@@ -212,3 +214,9 @@ header {
 .page-container .main-sidebar .mdc-list-item {
   white-space: normal;
 }
+
+
+
+
+/* MATERIAL COMPONENTS WEB OVERRIDES / Pass on to dev
+=============================================================== */
