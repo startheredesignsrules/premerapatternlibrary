@@ -108,6 +108,12 @@ header {
 .nav-header {
   font-weight: 800; }
 
+#back-to-top-btn {
+  bottom: 40px;
+  position: fixed;
+  right: 40px;
+  z-index: 10; }
+
 /* Make the top header not pink */
 .mdc-toolbar__row {
   background-color: #0099d8; }
