@@ -15,1857 +15,2169 @@
 
   <body class="mdc-typography">
     <a name="top"></a>
-    <header class="mdc-toolbar">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <span class="mdc-toolbar__title catalog-title">Premera UX Pattern Library</span>
-        </section>
-      </div>
+
+    <div class="page-background-hero">
+    </div>
+
+    <header class="page-header">
+      <img src="img/logo_pbc.png" alt="Premera logo">
     </header>
 
-    <div class="page-container">
-      <nav class="mdc-permanent-drawer">
-        <div class="mdc-list-group">
-          <nav class="mdc-list">
-            <a class="mdc-list-item" href="#cards">
-              Cards
-            </a>
+    <div class="page-container container-fluid">
 
-            <a class="mdc-list-item" href="#buttons">
-              Buttons
-            </a>
+      <div class="main-content-area row">
+        <nav class="main-sidebar col-xs-12 col-md-3">
+          <ul class="sidebar-nav-container mdc-list" data-children=".nav-section">
 
-            <a class="mdc-list-item" href="#dialogs">
-              Dialogs
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#overview">Overview</a>
+              <ul class="mdc-list collapse" id="overview">
+                <li class="mdc-list-item"><a href="#designers-and-prototypers">Designers &amp; Prototypers</a></li>
+                <li class="mdc-list-item"><a href="#how-to-update-this">How To Update This</a></li>
+                <li class="mdc-list-item"><a href="#prototyping">Prototyping</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#drawers">
-              Drawers
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#layoutPatterns">Layout</a>
+              <ul class="mdc-list collapse" id="layoutPatterns">
+                <li class="mdc-list-item"><a href="#grid-system">Grid System</a></li>
+                <li class="mdc-list-item"><a href="#cards">Cards</a></li>
+                <li class="mdc-list-item"><a href="#grid-lists">Grid Lists</a></li>
+                <li class="mdc-list-item"><a href="#page-layouts">Page Layouts</a></li>
+                <li class="mdc-list-item"><a href="#media">Media</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#gridlists">
-              Grid Lists
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#navigationPatterns">Navigation</a>
+              <ul class="mdc-list collapse" id="navigationPatterns">
+                <li class="mdc-list-item"><a href="#navs">Header, Footer, Sidebar Navs</a></li>
+                <li class="mdc-list-item"><a href="#toolbars">Toolbars</a></li>
+                <li class="mdc-list-item"><a href="#drawers">Drawers</a></li>
+                <li class="mdc-list-item"><a href="#menus">Menus</a></li>
+                <li class="mdc-list-item"><a href="#tabs">Tabs</a></li>
+                <li class="mdc-list-item"><a href="#breadcrumbs">Breadcrumbs</a></li>
+                <li class="mdc-list-item"><a href="#filters">Filters</a></li>
+                <li class="mdc-list-item"><a href="#pagination">Pagination</a></li>
+                <li class="mdc-list-item"><a href="#stepper">Stepper</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#checkboxes">
-              Checkboxes
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#basicsPatterns">Basics</a>
+              <ul class="mdc-list collapse" id="basicsPatterns">
+                <li class="mdc-list-item"><a href="#icons">Icons</a></li>
+                <li class="mdc-list-item"><a href="#buttons">Buttons</a></li>
+                <li class="mdc-list-item"><a href="#chips">Chips</a></li>
+                <li class="mdc-list-item"><a href="#lists">Lists</a></li>
+                <li class="mdc-list-item"><a href="#tables">Tables</a></li>
+                <li class="mdc-list-item"><a href="#status-indicators">Status Indicators</a></li>
+                <li class="mdc-list-item"><a href="#progress-indicators">Progress Indicators</a></li>
+                <li class="mdc-list-item"><a href="#alerts">Alerts</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#radiobuttons">
-              Radio Buttons
-            </a>
 
-            <a class="mdc-list-item" href="#selectmenus">
-              Select Menus
-            </a>
 
-            <a class="mdc-list-item" href="#sliders">
-              Sliders
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#fancyPatterns">Fancy Things</a>
+              <ul class="mdc-list collapse" id="fancyPatterns">
+                <li class="mdc-list-item"><a href="#tooltips">Tooltips</a></li>
+                <li class="mdc-list-item"><a href="#expansion-panel">Expansion Panel</a></li>
+                <li class="mdc-list-item"><a href="#carousel">Carousel</a></li>
+                <li class="mdc-list-item"><a href="#dialogs">Dialogs</a></li>
+                <li class="mdc-list-item"><a href="#snackbars">Snackbars</a></li>
+                <li class="mdc-list-item"><a href="#charts-and-graphs">Charts &amp; Graphs</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#switches">
-              Switches
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#formsPatterns">Forms</a>
+              <ul class="mdc-list collapse" id="formsPatterns">
+                <li class="mdc-list-item"><a href="#form-guidelines">Form Guidelines</a></li>
+                <li class="mdc-list-item"><a href="#errors-and-validation">Errors &amp; Validation</a></li>
+                <li class="mdc-list-item"><a href="#placeholders-and-hints">Placeholders &amp; Hints</a></li>
+                <li class="mdc-list-item"><a href="#text-fields">Text Fields</a></li>
+                <li class="mdc-list-item"><a href="#autocomplete">Autocomplete</a></li>
+                <li class="mdc-list-item"><a href="#checkboxes">Checkboxes, Radio Buttons &amp; Switches</a></li>
+                <li class="mdc-list-item"><a href="#select-menus">Select Menus</a></li>
+                <li class="mdc-list-item"><a href="#date-pickers">Date pickers</a></li>
+                <li class="mdc-list-item"><a href="#sliders">Sliders</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#textfields">
-              Text Fields
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#typographyPatterns">Typography</a>
+              <ul class="mdc-list collapse" id="typographyPatterns">
+                <li class="mdc-list-item"><a href="#typography">Typography</a></li>
+                <li class="mdc-list-item"><a href="#links">Links</a></li>
+                <li class="mdc-list-item"><a href="#premera-dash-separators">Premera dash separator</a></li>
+              </ul>
+            </li>
 
-            <a class="mdc-list-item" href="#layoutgrid">
-              Layout Grid
-            </a>
+            <li class="nav-section">
+              <a class="nav-header" data-toggle="collapse" data-parent=".sidebar-nav-container" href="#styleandbrandingPatterns">Style &amp; Branding Guide</a>
+              <ul class="mdc-list collapse" id="styleandbrandingPatterns">
+                <li class="mdc-list-item"><a href="#color-scheme">Color Scheme</a></li>
+                <li class="mdc-list-item"><a href="#logo">Logo</a></li>
+                <li class="mdc-list-item"><a href="#style">Style</a></li>
+                <li class="mdc-list-item"><a href="#photography">Photography</a></li>
+                <li class="mdc-list-item"><a href="#voice">Voice</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-            <a class="mdc-list-item" href="#lists">
-              Lists
-            </a>
 
-            <a class="mdc-list-item" href="#menus">
-              Menus
-            </a>
 
-            <a class="mdc-list-item" href="#snackbars">
-              Snackbars
-            </a>
+        <!-- OVERVIEW ------------------------------------------------ -->
+        <main class="main-content col-xs-12 col-md-9">
 
-            <a class="mdc-list-item" href="#tabs">
-              Tabs
-            </a>
+          <section class="pattern-section">
+            <h1 class="section-header">Overview</h1>
+            <p class="lead">Welcome! This Pattern Library and Style Guide combines guidelines from Google Material Design, Bootstrap, and Premera. It is meant as a final authority on accepted patterns and styles and their usage. Please reference this document anytime you are building a new design or prototype for release.</p>
 
-            <a class="mdc-list-item" href="#toolbars">
-              Toolbars
-            </a>
+            <a name="designers-and-prototypers"></a>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <h4>For Designers</h4>
+                <p>This Pattern Library is meant as a <strong>master reference</strong> for modular, reusable, consistent design patterns across Premera's website. This document will continue to grow and change as we add, remove or update our patterns.</p>
+                <p>To suggest an update to the Pattern Library, please fill out <a href="">this form on Confluence</a> and submit it to your supervisor.</p>
+              </div>
 
-            <a class="mdc-list-item" href="#typography">
-              Typography
-            </a>
+              <div class="col-xs-12 col-sm-6">
+                <h4>For Prototypers</h4>
+                <p>Currently, Google Material Design's "Material Components Web" platform is the quickest and easiest way to get set up with Material Design on a website. This is why we used it to build this Pattern Library and also why we're suggesting it be used by any code-loving designers to build their prototypes. We'll explain everything to you here.</p>
+                <p>The quickest way to get started on your first prototype using this system is to download the <a href="">Prototype Template</a>. Everything you need to run this locally exists in this zip. If you want to edit the core styles however, you'll need to install and run <a href="">SASS</a> (it's easy!).</p>
+              </div>
+            </div>
 
-            <a class="mdc-list-item" href="#formfields">
-              Form Fields Helper
+            <a name="how-to-update-this"></a>
+            <h4>How To Update This</h4>
+            <p>This is a living document, and will need to be updated with changes to our design system.</p>
+            <br />
+
+            <a name="prototyping"></a>
+            <h4>Prototyping</h4>
+            <p>This section will guide you through building an interactive, coded prototype using this sytem.</p>
+
+            <h5>System Setup</h5>
+            <p>...</p>
+
+            <h5>Starter Template</h5>
+            <p>...</p>
+
+            <h5>Utilities</h5>
+            <p>...</p>
+          </section>
+
+
+
+          <!-- LAYOUT ------------------------------------------------ -->
+
+          <h1 class="section-header">Layout</h1>
+
+          <!-- Grid System -->
+          <section class="pattern-section">
+            <a name="grid-system"></a>
+            <h1>Grid System (GMD)</h1>
+            <p class="lead">Material Design's responsive 12-column grid layout.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Material design’s responsive UI is based on a 12-column grid layout. This grid creates visual consistency between layouts, while allowing flexibility across a wide variety of designs. The number of grid columns varies based on the breakpoint system.</p>
+                <p>The responsive grid focuses on consistent margin and gutter widths, rather than column width. Material design margins and columns follow an 8dp square baseline grid. Margins and gutters can be 8, 16, 24, or 40dp wide. Margins and gutters don’t need to be equal. For example, it’s acceptable to use 40dp margins and 24dp gutters in the same layout.</p>
+                <p><strong>Full-width grids</strong> use fluid columns and breakpoints to determine when a layout needs to change.</p>
+                <p><strong>Centered grids</strong> use fixed columns and reflow the layout when all columns (plus a defined margin) no longer fit on screen.</p>
+                <p><a href="https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-grid" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell">Cell 1</div>
+                <div class="mdc-layout-grid__cell">Cell 2</div>
+                <div class="mdc-layout-grid__cell">Cell 3</div>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#layoutgrid-code"
+              aria-expanded="false" aria-controls="layoutgrid-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="layoutgrid-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell">Cell 1</div>
+      <div class="mdc-layout-grid__cell">Cell 2</div>
+      <div class="mdc-layout-grid__cell">Cell 3</div>
+    </div>
+  </div>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+          <!-- CARDS -->
+          <section class="pattern-section">
+            <a name="cards"></a>
+            <h1>Cards</h1>
+            <p class="lead">A card is a sheet of material that serves as an entry point to more detailed information.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Cards may contain a photo, text, and a link about a single subject. They may display content containing elements of varying size, such as photos with captions of variable length. A card collection is a layout of cards on the same plane. Cards display content composed of different elements whose size or supported actions vary.</p>
+                <p><a href="https://material.io/guidelines/components/cards.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>Don't use cards to contain everything all the time.</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__media mdc-theme--primary-bg">
+                    <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Title goes here</h1>
+                    <h1 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h1>
+                  </section>
+                  <section class="mdc-card__actions">
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                  </section>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-8">
+                <div id="card-example-2" class="mdc-card">
+                  <section class="mdc-card__media example-card"></section>
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                    <h1 class="mdc-card__subtitle">Subtitle here</h1>
+                  </section>
+                  <section class="mdc-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                  </section>
+                  <section class="mdc-card__actions">
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-card example-card">
+    <section class="mdc-card__media mdc-theme--primary-bg">
+      <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Title goes here</h1>
+      <h1 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h1>
+    </section>
+    <section class="mdc-card__actions">
+      <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+      <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+    </section>
+  </div>
+
+  <div id="card-example-2" class="mdc-card">
+    <section class="mdc-card__media example-card"></section>
+    <section class="mdc-card__primary">
+      <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+      <h1 class="mdc-card__subtitle">Subtitle here</h1>
+    </section>
+    <section class="mdc-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </section>
+    <section class="mdc-card__actions">
+      <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+      <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+    </section>
+  </div>
+                  </script>
+                </code></pre>
+                <br>
+
+                <h4>Adding The Colored Area or Image</h4>
+                <p>The base code in Material.io doesn't come with a section for images, so you have to add that in HTML and add custom CSS for it.</p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <section class="mdc-card__media mdc-theme--primary-bg">
+    <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Title goes here</h1>
+    <h1 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h1>
+  </section>
+
+  <section class="mdc-card__media"></section>
+                  </script>
+                </code></pre>
+
+
+                <pre><code class="language-css">
+  .example-card > .mdc-card__media {
+    height: 9em;
+  }
+
+  #example-card-2 .mdc-card__media {
+    background-image: url("https://www.premera.com/images/Style_Guide/Jumbotron_Woman_650x275.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px; /* Note: Height works in conjunction with height of card */
+  }
+                </code></pre>
+                <br>
+
+                <h4>Custom Sizing</h4>
+                <p>Cards don’t come with a predefined width or height. They expand horizontally to fill all available space,
+                  and vertically to fit their contents. If you’d like to maintain a consistent height and width across cards,
+                  you’ll need to set it in your styles. You might need to muck with the media height and the card height/width
+                  to make sure you don't have any weird gaps.</p>
+
+                <pre><code class="language-css">
+  .mdc-card {
+    height: 450px; /* Note: Height may impact media section */
+    width: 350px;
+  }
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+          <!-- GRID LISTS -->
+          <section class="pattern-section">
+            <a name="grid-lists"></a>
+            <h1>Grid Lists</h1>
+            <p class="lead">Grid lists are an alternative to standard list views.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. Grid lists are best used on similar data types. They help improve the visual comprehension of the content they contain.</p>
+                <p><strong>Types</strong></p>
+                <ul>
+                  <li>Image-only</li>
+                  <li>Single-line text (or with icon)</li>
+                  <li>Two-line text (or with icon)</li>
+                </ul>
+                <p><a href="https://material.io/guidelines/components/grid-lists.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <div class="mdc-grid-list">
+              <ul class="mdc-grid-list__tiles">
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                    <span class="mdc-grid-tile__title">Title</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                    <span class="mdc-grid-tile__title">Title</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+                  </div>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#grid-code"
+              aria-expanded="false" aria-controls="grid-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="grid-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <h4>With Title</h4>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-grid-list">
+    <ul class="mdc-grid-list__tiles">
+      <li class="mdc-grid-tile">
+        <div class="mdc-grid-tile__primary">
+          <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+        </div>
+        <span class="mdc-grid-tile__secondary">
+          <span class="mdc-grid-tile__title">Title</span>
+        </span>
+      </li>
+      <li class="mdc-grid-tile">
+        <div class="mdc-grid-tile__primary">
+          <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+        </div>
+        <span class="mdc-grid-tile__secondary">
+          <span class="mdc-grid-tile__title">Title</span>
+        </span>
+      </li>
+    </ul>
+  </div>
+                  </script>
+                </code></pre>
+
+                <h4>Without Title</h4>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-grid-list">
+    <ul class="mdc-grid-list__tiles">
+      <li class="mdc-grid-tile">
+        <div class="mdc-grid-tile__primary">
+          <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+        </div>
+      </li>
+      <li class="mdc-grid-tile">
+        <div class="mdc-grid-tile__primary">
+          <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
+        </div>
+      </li>
+    </ul>
+  </div>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+          <!-- Page Layout & Guidelines -->
+          <section class="pattern-section">
+            <a name="page-layouts"></a>
+            <h1>Page Layouts</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Media -->
+          <section class="pattern-section">
+            <a name="media"></a>
+            <h1>Media</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- NAVIGATION -------------------------------------------------- -->
+
+          <h1 class="section-header">Navigation</h1>
+
+          <!-- Header, Footer, Sidebvar Navs -->
+          <section class="pattern-section">
+            <a name="navs"></a>
+            <h1>Header, Footer, Sidebar Navs</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- TOOLBARS -->
+          <section class="pattern-section">
+            <a name="toolbars"></a>
+            <h1>Toolbars</h1>
+            <p class="lead">Toolbar actions appear above the view affected by their actions.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Toolbars appear a step above the content they affect. They may constrain their width to accommodate material passing over them. Do not separate a toolbar’s actions by another sheet of material, unless it is transient, such as a menu or dialog.</p>
+                <p>Toolbars appear a step above the sheet of material affected by their actions. When sheets scroll underneath toolbars, they are clipped and cannot pass through to the opposite side.</p>
+                <p><a href="https://material.io/guidelines/components/toolbars.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <header class="mdc-toolbar" data-mdc-auto-init="MDCToolbar">
+              <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                  <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
+                  <span class="mdc-toolbar__title">Title</span>
+                </section>
+              </div>
+            </header>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#toolbar-code"
+              aria-expanded="false" aria-controls="toolbar-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="toolbar-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <header class="mdc-toolbar" data-mdc-auto-init="MDCToolbar">
+    <div class="mdc-toolbar__row">
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+        <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
+        <span class="mdc-toolbar__title">Title</span>
+      </section>
+    </div>
+  </header>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+          <!-- DRAWERS -->
+          <section class="pattern-section">
+            <a name="drawers"></a>
+            <h1>Drawers</h1>
+            <p class="lead">The navigation drawer slides in from the left and contains the navigation destinations for your app.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>The nav drawer spans the height of the screen, with everything behind it visible but darkened by a scrim. The navigation drawer follows the keylines and metrics for lists.</p>
+                <p><a href="https://material.io/guidelines/patterns/navigation-drawer.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#drawer-code"
+              aria-expanded="false" aria-controls="drawer-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="drawer-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+      <div>Toolbar goes here</div>
+      <div class="content">
+        <nav class="mdc-permanent-drawer mdc-typography">
+          <nav id="icon-with-text-demo" class="mdc-list">
+            <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+            </a>
+            <a class="mdc-list-item" href="#">
+              Star
             </a>
           </nav>
-        </div>
-      </nav>
-
-      <main class="main-content">
-        <h1>Welcome!</h1>
-        <p class="lead">blah blah</p>
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <h3>For Designers</h3>
-            <p>This Pattern Library is meant as a master reference for modular, reusable, consistent design patterns across Premera's website. This document will continue to grow and change as we add, remove or update our patterns.</p>
-            <p>To suggest an update to the Pattern Library, please fill out <a href="">this form on Confluence</a> and submit it to your supervisor.</p>
-          </div>
-
-          <div class="col-xs-12 col-sm-6">
-            <h3>For Prototypers</h3>
-            <p>Currently, Google Material Design's "Material Components Web" platform is the quickest and easiest way to get set up with Material Design on a website. This is why we used it to build this Pattern Library and also why we're suggesting it be used by any code-loving designers to build their prototypes. We'll explain everything to you here.</p>
-            <p>The quickest way to get started on your first prototype using this system is to download the <a href="">Prototype Template</a>. Everything you need to run this locally exists in this zip. If you want to edit the core styles however, you'll need to install and run <a href="">SASS</a> (it's easy!).</p>
-          </div>
-        </div>
-
-        <!-- CARDS -->
-        <section class="pattern-section">
-          <a name="cards"></a>
-          <h1>Cards</h1>
-          <p class="lead">A card is a sheet of material that serves as an entry point to more detailed information.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Cards may contain a photo, text, and a link about a single subject. They may display content containing elements of varying size, such as photos with captions of variable length. A card collection is a layout of cards on the same plane. Cards display content composed of different elements whose size or supported actions vary.</p>
-              <p><a href="https://material.io/guidelines/components/cards.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>Don't use cards to contain everything all the time.</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <div class="row">
-            <div class="col-xs-12 col-sm-4">
-              <div class="mdc-card">
-                <section class="mdc-card__media"></section>
-                <section class="mdc-card__primary">
-                  <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-                  <h2 class="mdc-card__subtitle">Subtitle here</h2>
-                </section>
-                <section class="mdc-card__supporting-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
-                </section>
-                <section class="mdc-card__actions">
-                  <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-                  <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-                </section>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8">
-              <div class="mdc-card">
-                <section class="mdc-card__media"></section>
-                <section class="mdc-card__primary">
-                  <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-                  <h2 class="mdc-card__subtitle">Subtitle here</h2>
-                </section>
-                <section class="mdc-card__supporting-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
-                </section>
-                <section class="mdc-card__actions">
-                  <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-                  <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-                </section>
-              </div>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-    <div id="card-example" class="mdc-card">
-      <section class="mdc-card__media"></section>
-      <section class="mdc-card__primary">
-        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-        <h2 class="mdc-card__subtitle">Subtitle here</h2>
-      </section>
-      <section class="mdc-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </section>
-      <section class="mdc-card__actions">
-        <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-        <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-      </section>
-    </div>
-                </script>
-              </code></pre>
-              <br>
-
-              <h3>Adding The Image</h3>
-              <p>The base code in Material.io doesn't come with a section for images, so you have to add that in HTML and add custom CSS for it.</p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-    <section class="mdc-card__media"></section>
-                </script>
-              </code></pre>
-
-
-              <pre><code class="language-css">
-    #card-example .mdc-card__media {
-      background-image: url("https://www.premera.com/images/Style_Guide/Jumbotron_Woman_650x275.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 200px; /* Note: Height works in conjunction with height of card */
-    }
-              </code></pre>
-              <br>
-
-              <h3>Custom Sizing</h3>
-              <p>Cards don’t come with a predefined width or height. They expand horizontally to fill all available space,
-                and vertically to fit their contents. If you’d like to maintain a consistent height and width across cards,
-                you’ll need to set it in your styles. You might need to muck with the media height and the card height/width
-                to make sure you don't have any weird gaps.</p>
-
-              <pre><code class="language-css">
-    #card-example.mdc-card {
-      height: 450px; /* Note: Height works in conjunction with height of media below */
-      width: 350px;
-    }
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- BUTTONS -->
-        <section class="pattern-section">
-          <a name="buttons"></a>
-          <h2 class="mdc-typography--display2">Buttons</h2>
-          <p class="lead">Buttons communicate the action that will occur when the user touches them. We have a number to choose from.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <h5>Flat buttons</h5>
-              <p>Flat buttons are text-only buttons. They may be used in dialogs, toolbars, or inline. They do not lift, but fill with color on press.</p>
-              <h5>Raised buttons</h5>
-              <p>Raised buttons are rectangular-shaped buttons. They may be used inline. They lift and display ink reactions on press.</p>
-              <p><a href="https://material.io/guidelines/components/buttons.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-          <div class="row">
-            <div class="col-xs-12 col-sm-2">
-              <button class="mdc-button mdc-button--raised">
-                Raised button
-              </button>
-              <br><br>
-
-              <button class="mdc-button mdc-button--raised" disabled>
-                Raised disabled
-              </button>
-            </div>
-
-            <div class="col-xs-12 col-sm-2">
-              <button class="mdc-button">
-                Flat button
-              </button>
-              <br><br>
-
-              <button class="mdc-button" disabled>
-                Flat disabled
-              </button>
-            </div>
-
-            <div class="col-xs-12 col-sm-2">
-              <button class="mdc-button mdc-button--raised">
-                <i class="material-icons mdc-button__icon">favorite</i>
-                Icon Button
-              </button>
-            </div>
-
-            <div class="col-xs-12 col-sm-2">
-              <button class="mdc-fab material-icons" aria-label="Favorite">
-                <span class="mdc-fab__icon">
-                  favorite
-                </span>
-              </button>
-            </div>
-
-            <div class="col-xs-12 col-sm-2">
-              <i class="mdc-icon-toggle material-icons" role="button" aria-pressed="false"
-                 aria-label="Add to favorites" tabindex="0"
-                 data-toggle-on='{"label": "Remove from favorites", "content": "favorite"}'
-                 data-toggle-off='{"label": "Add to favorites", "content": "favorite_border"}'
-                 data-mdc-auto-init="MDCIconToggle">
-                favorite_border
-              </i>
-            </div>
-
-            <div class="col-xs-12 col-sm-2">
-
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#button-code-1"
-            aria-expanded="false" aria-controls="button-code-1">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="button-code-1">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<button class="mdc-button mdc-button--raised">
-  Raised button
-</button>
-
-<button class="mdc-button">
-  Flat button
-</button>
-
-<button class="mdc-button mdc-button--raised" disabled>
-  Raised button disabled
-</button>
-
-<button class="mdc-button" disabled>
-  Flat button disabled
-</button>
-
-<button class="mdc-button mdc-button--raised">
-  <i class="material-icons mdc-button__icon">favorite</i>
-  Icon Button
-</button>
-
-<button class="mdc-fab material-icons" aria-label="Favorite">
-  <span class="mdc-fab__icon">
-    favorite
-  </span>
-</button>
-
-<i class="mdc-icon-toggle material-icons" role="button" aria-pressed="false"
-   aria-label="Add to favorites" tabindex="0"
-   data-toggle-on='{"label": "Remove from favorites", "content": "favorite"}'
-   data-toggle-off='{"label": "Add to favorites", "content": "favorite_border"}'>
-  favorite_border
-</i>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-          <br><br><br><br>
-        </secton>
-
-
-
-        <!-- DIALOGS -->
-        <section class="pattern-section">
-          <a name="dialogs"></a>
-          <h2 class="mdc-typography--display2">Dialogs</h2>
-          <p class="lead">Dialogs inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Dialogs contain text and UI controls. They retain focus until dismissed or a required action has been taken. Use dialogs sparingly because they are interruptive.</p>
-              <p>Some dialog types include:</p>
-              <ul>
-                <li>Alerts are urgent interruptions that inform about a situation and require acknowledgement.</li>
-                <li>Simple menus display options for list items, whereas simple dialogs can provide details or actions about a list item.</li>
-                <li>Confirmation dialogs require users to explicitly confirm a choice.</li>
-              </ul>
-              <p><a href="https://material.io/guidelines/components/dialogs.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-          <p><button class="mdc-button mdc-button--raised" id="default-dialog-activation">Show Dialog</button></p>
-
-          <aside id="mdc-dialog-example"
-            class="mdc-dialog"
-            role="alertdialog"
-            aria-labelledby="my-mdc-dialog-label"
-            aria-describedby="my-mdc-dialog-description">
-            <div class="mdc-dialog__surface">
-              <header class="mdc-dialog__header">
-                <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
-                  Use Google's location service?
-                </h2>
-              </header>
-              <section id="my-mdc-dialog-description" class="mdc-dialog__body">
-                Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
-              </section>
-              <footer class="mdc-dialog__footer">
-                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
-              </footer>
-            </div>
-            <div class="mdc-dialog__backdrop"></div>
-          </aside>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#dialog-code"
-            aria-expanded="false" aria-controls="dialog-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="dialog-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <h3>HTML to initiate dialog</h3>
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-    <p><button class="mdc-button mdc-button--raised" id="default-dialog-activation">Show Dialog</button></p>
-                </script>
-              </code></pre>
-
-              <h3>JavaScript to initiate dialog</h3>
-              <pre><code class="language-javascript">
-    var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-example'));
-    document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
-      dialog.lastFocusedTarget = evt.target;
-      dialog.show();
-    })
-              </code></pre>
-
-              <h3>Dialog HTML</h3>
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-    <aside id="mdc-dialog-example"
-      class="mdc-dialog"
-      role="alertdialog"
-      aria-labelledby="my-mdc-dialog-label"
-      aria-describedby="my-mdc-dialog-description">
-      <div class="mdc-dialog__surface">
-        <header class="mdc-dialog__header">
-          <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
-            Use Googles location service
-          </h2>
-        </header>
-        <section id="my-mdc-dialog-description" class="mdc-dialog__body">
-          Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
-        </section>
-        <footer class="mdc-dialog__footer">
-          <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-          <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
-        </footer>
-      </div>
-      <div class="mdc-dialog__backdrop"></div>
-    </aside>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- DRAWERS -->
-        <section class="pattern-section">
-          <a name="drawers"></a>
-          <h2 class="mdc-typography--display2">Drawers</h2>
-          <p class="lead">The navigation drawer slides in from the left and contains the navigation destinations for your app.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>The nav drawer spans the height of the screen, with everything behind it visible but darkened by a scrim. The navigation drawer follows the keylines and metrics for lists.</p>
-              <p><a href="https://material.io/guidelines/patterns/navigation-drawer.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#drawer-code"
-            aria-expanded="false" aria-controls="drawer-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="drawer-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-    <div>Toolbar goes here</div>
-    <div class="content">
-      <nav class="mdc-permanent-drawer mdc-typography">
-        <nav id="icon-with-text-demo" class="mdc-list">
-          <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-          </a>
-          <a class="mdc-list-item" href="#">
-            Star
-          </a>
         </nav>
-      </nav>
-      <main>
-        Page content goes here.
-      </main>
+        <main>
+          Page content goes here.
+        </main>
+      </div>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+
+          <!-- MENUS -->
+          <section class="pattern-section">
+            <a name="menus"></a>
+            <h1>Menus</h1>
+            <p class="lead">Menus display a list of choices on a transient sheet of material.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Menus appear upon interaction with a button, action, or other control. They display a list of choices, with one choice per line.</p>
+                <p>Menu items may be disabled if not applicable to a certain context. Contextual menus dynamically change their available menu items based on the current state of the app.</p>
+                <p>A menu is a temporary piece of material that appears upon interaction with a button, action, pointer, or other control. It contains at least two menu items.</p>
+                <p>Each menu item consists of a discrete option or action that can affect the app, the view, or selected elements within a view. Menus should not be used as a primary method for navigation within an app.</p>
+                <p><a href="https://material.io/guidelines/components/menus.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <div class="mdc-menu-anchor">
+              <button class="mdc-button mdc-button--raised simple-menu-trigger">Open Menu</button>
+
+              <div class="mdc-simple-menu simple-menu-container" tabindex="-1" data-mdc-auto-init="MDCSimpleMenu">
+                <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    A Menu Item
+                  </li>
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    Another Menu Item
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#menu-code"
+              aria-expanded="false" aria-controls="menu-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="menu-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+      <div class="mdc-menu-anchor">
+    <button class="mdc-button mdc-button--raised simple-menu-trigger">Open Menu</button>
+
+    <div class="mdc-simple-menu simple-menu-container" tabindex="-1" data-mdc-auto-init="MDCSimpleMenu">
+      <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+        <li class="mdc-list-item" role="menuitem" tabindex="0">
+          A Menu Item
+        </li>
+        <li class="mdc-list-item" role="menuitem" tabindex="0">
+          Another Menu Item
+        </li>
+      </ul>
     </div>
-                </script>
-              </code></pre>
+  </div>
+                  </script>
+                </code></pre>
+                <br><br>
+
+                <h4>Calling The Menu</h4>
+                <pre><code class="language-javascript">
+      var menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.simple-menu-container'));
+      document.querySelector('.simple-menu-trigger').addEventListener('click', () => menu.open = !menu.open);
+                </code></pre>
+              </div>
             </div>
-          </div>
-        </secton>
+          </secton>
 
 
 
-        <!-- GRID LISTS -->
-        <section class="pattern-section">
-          <a name="grid-list"></a>
-          <h2 class="mdc-typography--display2">Grid Lists</h2>
-          <p class="lead">Grid lists are an alternative to standard list views.</p>
+          <!-- TABS -->
+          <section class="pattern-section">
+            <a name="tabs"></a>
+            <h1>Tabs</h1>
+            <p class="lead">Tabs make it easy to explore and switch between different views.</p>
 
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. Grid lists are best used on similar data types. They help improve the visual comprehension of the content they contain.</p>
-              <p><strong>Types</strong></p>
-              <ul>
-                <li>Image-only</li>
-                <li>Single-line text (or with icon)</li>
-                <li>Two-line text (or with icon)</li>
-              </ul>
-              <p><a href="https://material.io/guidelines/components/grid-lists.html" target="_blank">View Material Design Guidelines</a></p>
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.</p>
+                <p>Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.</p>
+                <p>Because swipe gestures are used for navigating between tabs, don't pair tabs with content that also supports swiping.</p>
+                <p><strong>Types</strong></p>
+                <ul>
+                  <li>Fixed</li>
+                  <li>Scrollable</li>
+                </ul>
+                <p><strong>Tab labels</strong></p>
+                <p>Tab labels may include icons and text.</p>
+                <p><strong>Color</strong></p>
+                <p>Apply your app’s accent color, or a contrasting color, to text fields and the text field cursor.</p>
+                <p><a href="https://material.io/guidelines/components/tabs.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
+            <h4>Examples</h4>
+
+            <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text" data-mdc-auto-init="MDCTabBar">
+              <a class="mdc-tab mdc-tab--with-icon-and-text mdc-tab--active" href="#recents">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">phone</i>
+                <span class="mdc-tab__icon-text">Recents</span>
+              </a>
+              <a class="mdc-tab mdc-tab--with-icon-and-text" href="#favorites">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">favorite</i>
+                <span class="mdc-tab__icon-text">Favorites</span>
+              </a>
+              <a class="mdc-tab mdc-tab--with-icon-and-text" href="#nearby">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">person_pin</i>
+                <span class="mdc-tab__icon-text">Nearby</span>
+              </a>
+              <span class="mdc-tab-bar__indicator"></span>
+            </nav>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#tabs-code"
+              aria-expanded="false" aria-controls="tabs-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="tabs-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text" data-mdc-auto-init="MDCTabBar">
+    <a class="mdc-tab mdc-tab--with-icon-and-text mdc-tab--active" href="#recents">
+      <i class="material-icons mdc-tab__icon" aria-hidden="true">phone</i>
+      <span class="mdc-tab__icon-text">Recents</span>
+    </a>
+    <a class="mdc-tab mdc-tab--with-icon-and-text" href="#favorites">
+      <i class="material-icons mdc-tab__icon" aria-hidden="true">favorite</i>
+      <span class="mdc-tab__icon-text">Favorites</span>
+    </a>
+    <a class="mdc-tab mdc-tab--with-icon-and-text" href="#nearby">
+      <i class="material-icons mdc-tab__icon" aria-hidden="true">person_pin</i>
+      <span class="mdc-tab__icon-text">Nearby</span>
+    </a>
+    <span class="mdc-tab-bar__indicator"></span>
+  </nav>
+                  </script>
+                </code></pre>
+              </div>
             </div>
-          </div>
+          </secton>
 
-          <h3>Examples</h3>
 
-          <div class="mdc-grid-list">
-            <ul class="mdc-grid-list__tiles">
-              <li class="mdc-grid-tile">
-                <div class="mdc-grid-tile__primary">
-                  <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-                </div>
-                <span class="mdc-grid-tile__secondary">
-                  <span class="mdc-grid-tile__title">Title</span>
-                </span>
-              </li>
-              <li class="mdc-grid-tile">
-                <div class="mdc-grid-tile__primary">
-                  <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-                </div>
-                <span class="mdc-grid-tile__secondary">
-                  <span class="mdc-grid-tile__title">Title</span>
-                </span>
-              </li>
-              <li class="mdc-grid-tile">
-                <div class="mdc-grid-tile__primary">
-                  <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-                </div>
-              </li>
-              <li class="mdc-grid-tile">
-                <div class="mdc-grid-tile__primary">
-                  <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-                </div>
-              </li>
-            </ul>
-          </div>
-          <br><br>
 
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#grid-code"
-            aria-expanded="false" aria-controls="grid-code">
-            Toggle Code
-          </button>
+          <!-- Breadcrumbs -->
+          <section class="pattern-section">
+            <a name="breadcrumbs"></a>
+            <h1>Breadcrumbs</h1>
+            <p class="lead">....</p>
+          </section>
 
-          <div class="collapse" id="grid-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
 
-              <h4>With Title</h4>
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-grid-list">
-  <ul class="mdc-grid-list__tiles">
-    <li class="mdc-grid-tile">
-      <div class="mdc-grid-tile__primary">
-        <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-      </div>
-      <span class="mdc-grid-tile__secondary">
-        <span class="mdc-grid-tile__title">Title</span>
-      </span>
-    </li>
-    <li class="mdc-grid-tile">
-      <div class="mdc-grid-tile__primary">
-        <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-      </div>
-      <span class="mdc-grid-tile__secondary">
-        <span class="mdc-grid-tile__title">Title</span>
+
+          <!-- Filters -->
+          <section class="pattern-section">
+            <a name="filters"></a>
+            <h1>Filters</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Pagination -->
+          <section class="pattern-section">
+            <a name="pagination"></a>
+            <h1>Pagination</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Stepper -->
+          <section class="pattern-section">
+            <a name="stepper"></a>
+            <h1>Stepper</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+
+          <!-- BASICS ------------------------------------------------------ -->
+
+          <h1 class="section-header">Basics</h1>
+
+          <!-- Icons -->
+          <section class="pattern-section">
+            <a name="icons"></a>
+            <h1>Icons</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- BUTTONS -->
+          <section class="pattern-section">
+            <a name="buttons"></a>
+            <h1>Buttons</h1>
+            <p class="lead">Buttons communicate the action that will occur when the user touches them. We have a number to choose from.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <h5>Flat buttons</h5>
+                <p>Flat buttons are text-only buttons. They may be used in dialogs, toolbars, or inline. They do not lift, but fill with color on press.</p>
+                <h5>Raised buttons</h5>
+                <p>Raised buttons are rectangular-shaped buttons. They may be used inline. They lift and display ink reactions on press.</p>
+                <p><a href="https://material.io/guidelines/components/buttons.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+            <div class="row">
+              <div class="col-xs-12 col-sm-2">
+                <button class="mdc-button mdc-button--raised">
+                  Raised button
+                </button>
+                <br><br>
+
+                <button class="mdc-button mdc-button--raised" disabled>
+                  Raised disabled
+                </button>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                <button class="mdc-button">
+                  Flat button
+                </button>
+                <br><br>
+
+                <button class="mdc-button" disabled>
+                  Flat disabled
+                </button>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                <button class="mdc-button mdc-button--raised">
+                  <i class="material-icons mdc-button__icon">favorite</i>
+                  Icon Button
+                </button>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                <button class="mdc-fab material-icons" aria-label="Favorite">
+                  <span class="mdc-fab__icon">
+                    favorite
+                  </span>
+                </button>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                <i class="mdc-icon-toggle material-icons" role="button" aria-pressed="false"
+                   aria-label="Add to favorites" tabindex="0"
+                   data-toggle-on='{"label": "Remove from favorites", "content": "favorite"}'
+                   data-toggle-off='{"label": "Add to favorites", "content": "favorite_border"}'
+                   data-mdc-auto-init="MDCIconToggle">
+                  favorite_border
+                </i>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#button-code-1"
+              aria-expanded="false" aria-controls="button-code-1">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="button-code-1">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <button class="mdc-button mdc-button--raised">
+    Raised button
+  </button>
+
+  <button class="mdc-button">
+    Flat button
+  </button>
+
+  <button class="mdc-button mdc-button--raised" disabled>
+    Raised button disabled
+  </button>
+
+  <button class="mdc-button" disabled>
+    Flat button disabled
+  </button>
+
+  <button class="mdc-button mdc-button--raised">
+    <i class="material-icons mdc-button__icon">favorite</i>
+    Icon Button
+  </button>
+
+  <button class="mdc-fab material-icons" aria-label="Favorite">
+    <span class="mdc-fab__icon">
+      favorite
+    </span>
+  </button>
+
+  <i class="mdc-icon-toggle material-icons" role="button" aria-pressed="false"
+     aria-label="Add to favorites" tabindex="0"
+     data-toggle-on='{"label": "Remove from favorites", "content": "favorite"}'
+     data-toggle-off='{"label": "Add to favorites", "content": "favorite_border"}'>
+    favorite_border
+  </i>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+            <br><br><br><br>
+          </secton>
+
+
+
+          <!-- Chips -->
+          <section class="pattern-section">
+            <a name="chips"></a>
+            <h1>Chips</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- LISTS -->
+          <section class="pattern-section">
+            <a name="lists"></a>
+            <h1>Lists</h1>
+            <p class="lead">Lists present multiple line items vertically as a single continuous element.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Lists are made up of a continuous column of rows. Each row contains a tile. Primary actions fill the tile, and supplemental actions are represented by icons and text. Lists are best suited for similar data types.</p>
+                <p>A <strong>list</strong> consists of a single continuous column of tessellated sub-divisions of equal width called <strong>rows</strong> that function as containers for <strong>tiles</strong>. Tiles hold content, and can vary in height within a list.</p>
+                <p>Lists are best suited to presenting a homogeneous data type or sets of data types, such as images and text. They are optimized for reading comprehension while differentiating either between similar data types, or qualities within a single data type.</p>
+                <p><a href="https://material.io/guidelines/components/lists.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <h4>Basic List</h4>
+                <ul class="mdc-list">
+                  <li class="mdc-list-item">Single-line item</li>
+                  <li class="mdc-list-item">Single-line item</li>
+                  <li class="mdc-list-item">Single-line item</li>
+                </ul>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <h4>Condensed List</h4>
+                <ul class="mdc-list mdc-list--dense">
+                  <li class="mdc-list-item">Single-line item</li>
+                  <li class="mdc-list-item">Single-line item</li>
+                  <li class="mdc-list-item">Single-line item</li>
+                </ul>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <h4>Two Line List</h4>
+                <ul class="mdc-list mdc-list--two-line">
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      Two-line item
+                      <span class="mdc-list-item__text__secondary">Secondary text</span>
+                    </span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      Two-line item
+                      <span class="mdc-list-item__text__secondary">Secondary text</span>
+                    </span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      Two-line item
+                      <span class="mdc-list-item__text__secondary">Secondary text</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <h4>List With Icons</h4>
+                <ul class="mdc-list">
+                  <li class="mdc-list-item">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">network_wifi</i>
+                    Wi-Fi
+                  </li>
+                  <li class="mdc-list-item">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">bluetooth</i>
+                    Bluetooth
+                  </li>
+                  <li class="mdc-list-item">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">data_usage</i>
+                    Data Usage
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <h4>List With Images</h4>
+                <ul class="mdc-list mdc-list--avatar-list">
+                  <li class="mdc-list-item">
+                    <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
+                         width="56" height="56" alt="Picture of Janet Perkins">
+                    Janet Perkins
+                  </li>
+                  <li class="mdc-list-item">
+                    <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
+                         width="56" height="56" alt="Picture of Mary Johnson">
+                    Mary Johnson
+                  </li>
+                  <li class="mdc-list-item">
+                    <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
+                         width="56" height="56" alt="Picture of Peter Carlsson">
+                    Peter Carlsson
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#list-code"
+              aria-expanded="false" aria-controls="list-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="list-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <ul class="mdc-list">
+    <li class="mdc-list-item">Single-line item</li>
+    <li class="mdc-list-item">Single-line item</li>
+    <li class="mdc-list-item">Single-line item</li>
+  </ul>
+
+  <ul class="mdc-list mdc-list--dense">
+    <li class="mdc-list-item">Single-line item</li>
+    <li class="mdc-list-item">Single-line item</li>
+    <li class="mdc-list-item">Single-line item</li>
+  </ul>
+
+  <ul class="mdc-list mdc-list--two-line">
+    <li class="mdc-list-item">
+      <span class="mdc-list-item__text">
+        Two-line item
+        <span class="mdc-list-item__text__secondary">Secondary text</span>
       </span>
     </li>
   </ul>
-</div>
-                </script>
-              </code></pre>
 
-              <h3>Without Title</h3>
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-grid-list">
-  <ul class="mdc-grid-list__tiles">
-    <li class="mdc-grid-tile">
-      <div class="mdc-grid-tile__primary">
-        <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-      </div>
-    </li>
-    <li class="mdc-grid-tile">
-      <div class="mdc-grid-tile__primary">
-        <img class="mdc-grid-tile__primary-content" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif" />
-      </div>
+  <ul class="mdc-list">
+    <li class="mdc-list-item">
+      <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">network_wifi</i>
+      Wi-Fi
     </li>
   </ul>
-</div>
-                </script>
-              </code></pre>
+
+  <ul class="mdc-list mdc-list--avatar-list">
+    <li class="mdc-list-item">
+      <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
+           width="56" height="56" alt="Picture of Janet Perkins">
+      Janet Perkins
+    </li>
+  </ul>
+                  </script>
+                </code></pre>
+              </div>
             </div>
-          </div>
-        </secton>
+          </secton>
 
 
 
-        <!-- CHECKBOXES -->
-        <section class="pattern-section">
-          <a name="checkboxes"></a>
-          <h2 class="mdc-typography--display2">Checkboxes</h2>
-          <p class="lead">Just your average checkbox.</p>
+          <!-- Tables -->
+          <section class="pattern-section">
+            <a name="tables"></a>
+            <h1>Tables</h1>
+            <p class="lead">....</p>
+          </section>
 
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Checkboxes allow the user to select multiple options from a set. If you have multiple options appearing in a list, you can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using a checkbox and use an on/off switch instead.</p>
-              <p><a href="https://material.io/guidelines/components/selection-controls.html#selection-controls-checkbox" target="_blank">View Material Design Guidelines</a></p>
+
+
+          <!-- Status Indicators -->
+          <section class="pattern-section">
+            <a name="status-indicators"></a>
+            <h1>Status Indicators</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Progress Indicators -->
+          <section class="pattern-section">
+            <a name="progress-indicators"></a>
+            <h1>Progress Indicators</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Alerts -->
+          <section class="pattern-section">
+            <a name="alerts"></a>
+            <h1>Alerts</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+
+          <!-- FANCY THINGS ------------------------------------------------ -->
+
+          <h1 class="section-header">Fancy Things</h1>
+
+          <!-- Tooltips -->
+          <section class="pattern-section">
+            <a name="tooltips"></a>
+            <h1>Tooltips</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Expansion Panel -->
+          <section class="pattern-section">
+            <a name="expansion-panel"></a>
+            <h1>Expansion Panel</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Carousel -->
+          <section class="pattern-section">
+            <a name="carousel"></a>
+            <h1>Carousel</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- DIALOGS -->
+          <section class="pattern-section">
+            <a name="dialogs"></a>
+            <h1>Dialogs</h1>
+            <p class="lead">Dialogs inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Dialogs contain text and UI controls. They retain focus until dismissed or a required action has been taken. Use dialogs sparingly because they are interruptive.</p>
+                <p>Some dialog types include:</p>
+                <ul>
+                  <li>Alerts are urgent interruptions that inform about a situation and require acknowledgement.</li>
+                  <li>Simple menus display options for list items, whereas simple dialogs can provide details or actions about a list item.</li>
+                  <li>Confirmation dialogs require users to explicitly confirm a choice.</li>
+                </ul>
+                <p><a href="https://material.io/guidelines/components/dialogs.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
+            <h4>Examples</h4>
+            <p><button class="mdc-button mdc-button--raised" id="default-dialog-activation">Show Dialog</button></p>
+
+            <aside id="mdc-dialog-example"
+              class="mdc-dialog"
+              role="alertdialog"
+              aria-labelledby="my-mdc-dialog-label"
+              aria-describedby="my-mdc-dialog-description">
+              <div class="mdc-dialog__surface">
+                <header class="mdc-dialog__header">
+                  <h1 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
+                    Use Google's location service?
+                  </h1>
+                </header>
+                <section id="my-mdc-dialog-description" class="mdc-dialog__body">
+                  Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+                </section>
+                <footer class="mdc-dialog__footer">
+                  <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
+                  <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+                </footer>
+              </div>
+              <div class="mdc-dialog__backdrop"></div>
+            </aside>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#dialog-code"
+              aria-expanded="false" aria-controls="dialog-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="dialog-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <h4>HTML to initiate dialog</h4>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+      <p><button class="mdc-button mdc-button--raised" id="default-dialog-activation">Show Dialog</button></p>
+                  </script>
+                </code></pre>
+
+                <h4>JavaScript to initiate dialog</h4>
+                <pre><code class="language-javascript">
+      var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-example'));
+      document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
+        dialog.lastFocusedTarget = evt.target;
+        dialog.show();
+      })
+                </code></pre>
+
+                <h4>Dialog HTML</h4>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+      <aside id="mdc-dialog-example"
+        class="mdc-dialog"
+        role="alertdialog"
+        aria-labelledby="my-mdc-dialog-label"
+        aria-describedby="my-mdc-dialog-description">
+        <div class="mdc-dialog__surface">
+          <header class="mdc-dialog__header">
+            <h1 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
+              Use Googles location service
+            </h1>
+          </header>
+          <section id="my-mdc-dialog-description" class="mdc-dialog__body">
+            Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+          </section>
+          <footer class="mdc-dialog__footer">
+            <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
+            <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+          </footer>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+      </aside>
+                  </script>
+                </code></pre>
+              </div>
             </div>
-          </div>
+          </secton>
 
-          <h3>Examples</h3>
-          <br>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="mdc-form-field">
-                <div class="mdc-checkbox">
-                  <input type="checkbox"
-                         id="my-checkbox"
-                         class="mdc-checkbox__native-control"/>
-                  <div class="mdc-checkbox__background">
-                    <svg class="mdc-checkbox__checkmark"
-                         viewBox="0 0 24 24">
-                      <path class="mdc-checkbox__checkmark__path"
-                            fill="none"
-                            stroke="white"
-                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                    </svg>
-                    <div class="mdc-checkbox__mixedmark"></div>
+
+          <!-- SNACKBARS -->
+          <section class="pattern-section">
+            <a name="snackbars"></a>
+            <h1>Snackbars</h1>
+            <p class="lead">Snackbars provide brief feedback about an operation through a message at the bottom of the screen.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p><strong>Snackbars</strong> contain a single line of text directly related to the operation performed. They may contain a text action, but no icons.</p>
+                <p><strong>Toasts</strong> (Android only) are primarily used for system messaging. They also display at the bottom of the screen, but may not be swiped off-screen.</p>
+                <p>Only one snackbar may be displayed at a time. Each snackbar may contain a single action, neither of which may be “Dismiss” or “Cancel.”</p>
+                <p>Snackbars animate upwards from the bottom edge of the screen.</p>
+                <p><a href="https://material.io/guidelines/components/snackbars-toasts.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <button class="mdc-button mdc-button--raised snackbar-trigger">Gimme A Snack</button>
+
+            <div class="mdc-snackbar"
+                 aria-live="assertive" aria-atomic="true" aria-hidden="true"
+                 data-mdc-auto-init="MDCSnackbar">
+              <div class="mdc-snackbar__text"></div>
+              <div class="mdc-snackbar__action-wrapper">
+                <button type="button" class="mdc-snackbar__action-button">Thanks!</button>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#snackbar-code"
+              aria-expanded="false" aria-controls="snackbar-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="snackbar-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <button class="mdc-button mdc-button--raised snackbar-trigger">Gimme A Snack</button>
+
+  <div class="mdc-snackbar"
+       aria-live="assertive" aria-atomic="true" aria-hidden="true"
+       data-mdc-auto-init="MDCSnackbar">
+    <div class="mdc-snackbar__text"></div>
+    <div class="mdc-snackbar__action-wrapper">
+      <button type="button" class="mdc-snackbar__action-button">Thanks!</button>
+    </div>
+  </div>
+                  </script>
+                </code></pre>
+                <br><br>
+
+                <h4>Making It Work</h4>
+                <pre><code class="language-javascript">
+  var snackbar = new mdc.snackbar.MDCSnackbar(document.querySelector('.mdc-snackbar'));
+  $('.snackbar-trigger').click(function() {
+    snackbar.show({
+      actionOnBottom: true,
+      message: 'You are the coolest!',
+      actionText: 'Thanks',
+      actionHandler: function() {
+       console.log("Stuff is working!");
+     }
+    });
+  });
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+          <!-- Charts & Graphs -->
+          <section class="pattern-section">
+            <a name="charts-and-graphs"></a>
+            <h1>Charts &amp; Graphs</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- FORMS ------------------------------------------------------- -->
+
+          <h1 class="section-header">Forms</h1>
+
+          <!-- Form Guidelines -->
+          <section class="pattern-section">
+            <a name="form-guidelines"></a>
+            <h1>Form Guidelines</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Errors & Validation -->
+          <section class="pattern-section">
+            <a name="errors-and-validation"></a>
+            <h1>Errors &amp; Validation</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Placeholders & Hints -->
+          <section class="pattern-section">
+            <a name="placeholders-and-hints"></a>
+            <h1>Placeholders &amp; Hints</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- TEXT FIELDS -->
+          <section class="pattern-section">
+            <a name="text-fields"></a>
+            <h1>Text Fields</h1>
+            <p class="lead">Text fields allow users to input, edit, and select text.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Text fields typically reside in forms but can appear in other places, like dialog boxes and search. Text fields validate input, help users fix errors, autocomplete words, and provide suggestions.</p>
+                <p><a href="https://material.io/guidelines/components/text-fields.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+
+            <form action="#" id="greeting-form">
+              <div>
+                <div class="mdc-form-field">
+                  <div class="mdc-textfield" data-mdc-auto-init="MDCTextField">
+                    <input id="firstname" type="text" class="mdc-textfield__input">
+                    <label for="firstname" class="mdc-textfield__label">
+                      First Name
+                    </label>
+                    <div class="mdc-textfield__bottom-line"></div>
                   </div>
                 </div>
 
-                <label for="my-checkbox">My Checkbox Label</label>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <div class="mdc-checkbox mdc-checkbox--disabled">
-                <input type="checkbox"
-                       id="basic-disabled-checkbox"
-                       class="mdc-checkbox__native-control"
-                       disabled />
-                <div class="mdc-checkbox__background">
-                  <svg class="mdc-checkbox__checkmark"
-                       viewBox="0 0 24 24">
-                    <path class="mdc-checkbox__checkmark__path"
-                          fill="none"
-                          stroke="white"
-                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                  </svg>
-                  <div class="mdc-checkbox__mixedmark"></div>
+                <div class="mdc-form-field">
+                  <div class="mdc-textfield" data-mdc-auto-init="MDCTextField">
+                    <input id="lastname" type="text" class="mdc-textfield__input">
+                    <label for="lastname" class="mdc-textfield__label">
+                      Last Name
+                    </label>
+                    <div class="mdc-textfield__bottom-line"></div>
+                  </div>
                 </div>
               </div>
-              <label for="basic-disabled-checkbox" id="basic-disabled-checkbox-label">This is my disabled checkbox</label>
-            </div>
-          </div>
-          <br><br>
+            </form>
+            <br><br>
 
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#checkbox-code"
-            aria-expanded="false" aria-controls="checkbox-code">
-            Toggle Code
-          </button>
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#textfield-code"
+              aria-expanded="false" aria-controls="textfield-code">
+              Toggle Code
+            </button>
 
-          <div class="collapse" id="checkbox-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
+            <div class="collapse" id="textfield-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
 
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-checkbox">
-  <input type="checkbox" class="mdc-checkbox__native-control"/>
-  <div class="mdc-checkbox__background">
-    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-      <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-    </svg>
-    <div class="mdc-checkbox__mixedmark"></div>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-textfield">
+    <input type="text" id="my-textfield" class="mdc-textfield__input">
+    <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
+    <div class="mdc-textfield__bottom-line"></div>
   </div>
-</div>
-                </script>
-              </code></pre>
+                  </script>
+                </code></pre>
+              </div>
             </div>
-          </div>
-          <br><br>
-        </secton>
+          </secton>
 
 
 
-        <!-- RADIO BUTTONS -->
-        <section class="pattern-section">
-          <a name="radio-buttons"></a>
-          <h2 class="mdc-typography--display2">Radio Buttons</h2>
-          <p class="lead">Radio buttons allow the user to select one option from a set.</p>
+          <!-- Autocomplete -->
+          <section class="pattern-section">
+            <a name="autocomplete"></a>
+            <h1>Autocomplete</h1>
+            <p class="lead">....</p>
+          </section>
 
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side. Otherwise, consider a dropdown, which uses less space than displaying all options.</p>
-              <p><a href="" target="_blank">View Material Design Guidelines</a></p>
+
+
+          <!-- Checkboxes, Radio Buttons &amp; Switches -->
+          <section class="pattern-section">
+            <a name="checkboxes"></a>
+            <h1>Checkboxes, Radio Buttons &amp; Switches</h1>
+            <p class="lead">....</p>
+
+
+            <h4>Radio Buttons</h4>
+            <p class="lead">Radio buttons allow the user to select one option from a set.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side. Otherwise, consider a dropdown, which uses less space than displaying all options.</p>
+                <p><a href="" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
+            <h4>Examples</h4>
 
-          <h3>Examples</h3>
-
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="mdc-radio">
-                <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
-                <div class="mdc-radio__background">
-                  <div class="mdc-radio__outer-circle"></div>
-                  <div class="mdc-radio__inner-circle"></div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
                 </div>
-              </div>
-              <label id="radio-1-label" for="radio-1">Radio 1</label>
+                <label id="radio-1-label" for="radio-1">Radio 1</label>
 
-              <div class="mdc-radio">
-                <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
-                <div class="mdc-radio__background">
-                  <div class="mdc-radio__outer-circle"></div>
-                  <div class="mdc-radio__inner-circle"></div>
+                <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
                 </div>
+                <label id="radio-2-label" for="radio-2">Radio 2</label>
               </div>
-              <label id="radio-2-label" for="radio-2">Radio 2</label>
-            </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <div class="mdc-radio mdc-radio--disabled">
-                <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" disabled>
-                <div class="mdc-radio__background">
-                  <div class="mdc-radio__outer-circle"></div>
-                  <div class="mdc-radio__inner-circle"></div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="mdc-radio mdc-radio--disabled">
+                  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" disabled>
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
                 </div>
+                <label id="radio-1-label" for="radio-1">Disabled Radio 1</label>
               </div>
-              <label id="radio-1-label" for="radio-1">Disabled Radio 1</label>
             </div>
-          </div>
-          <br><br>
+            <br><br>
 
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#radio-code"
-            aria-expanded="false" aria-controls="radio-code">
-            Toggle Code
-          </button>
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#radio-code"
+              aria-expanded="false" aria-controls="radio-code">
+              Toggle Code
+            </button>
 
-          <div class="collapse" id="radio-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
+            <div class="collapse" id="radio-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
 
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-radio">
-  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
-  <div class="mdc-radio__background">
-    <div class="mdc-radio__outer-circle"></div>
-    <div class="mdc-radio__inner-circle"></div>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
   </div>
-</div>
-<label id="radio-1-label" for="radio-1">Radio 1</label>
+  <label id="radio-1-label" for="radio-1">Radio 1</label>
 
-<div class="mdc-radio">
-  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
-  <div class="mdc-radio__background">
-    <div class="mdc-radio__outer-circle"></div>
-    <div class="mdc-radio__inner-circle"></div>
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
   </div>
-</div>
-<label id="radio-2-label" for="radio-2">Radio 2</label>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- SELECT MENUS -->
-        <section class="pattern-section">
-          <a name="select-menus"></a>
-          <h2 class="mdc-typography--display2">Select Menus</h2>
-          <p class="lead">Menus display a list of choices on a transient sheet of material.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Menus appear upon interaction with a button, action, or other control. They display a list of choices, with one choice per line. Menu items may be disabled if not applicable to a certain context. Contextual menus dynamically change their available menu items based on the current state of the app.</p>
-              <p><a href="https://material.io/guidelines/components/menus.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>Menus should not be used as a primary method for navigation within an app.</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <div class="mdc-select" role="listbox" tabindex="0" data-mdc-auto-init="MDCSelect">
-            <span class="mdc-select__selected-text">Pick a food group</span>
-            <div class="mdc-simple-menu mdc-select__menu">
-              <ul class="mdc-list mdc-simple-menu__items">
-                <li class="mdc-list-item" role="option" id="grains" aria-disabled="true">
-                  Pick a food group
-                </li>
-                <li class="mdc-list-item" role="option" id="grains" tabindex="0">
-                  Bread, Cereal, Rice, and Pasta
-                </li>
-                <li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
-                  Vegetables
-                </li>
-                <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
-                  Fruit
-                </li>
-                <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
-                  Milk, Yogurt, and Cheese
-                </li>
-                <li class="mdc-list-item" role="option" id="meat" tabindex="0">
-                  Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
-                </li>
-                <li class="mdc-list-item" role="option" id="fats" tabindex="0">
-                  Fats, Oils, and Sweets
-                </li>
-              </ul>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#select-code"
-            aria-expanded="false" aria-controls="select-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="select-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-select" role="listbox" tabindex="0">
-  <span class="mdc-select__selected-text">Pick a food group</span>
-  <div class="mdc-simple-menu mdc-select__menu">
-    <ul class="mdc-list mdc-simple-menu__items">
-      <li class="mdc-list-item" role="option" id="grains" aria-disabled="true">
-        Pick a food group
-      </li>
-      <li class="mdc-list-item" role="option" id="grains" tabindex="0">
-        Bread, Cereal, Rice, and Pasta
-      </li>
-      <li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
-        Vegetables
-      </li>
-      <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
-        Fruit
-      </li>
-      <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
-        Milk, Yogurt, and Cheese
-      </li>
-      <li class="mdc-list-item" role="option" id="meat" tabindex="0">
-        Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
-      </li>
-      <li class="mdc-list-item" role="option" id="fats" tabindex="0">
-        Fats, Oils, and Sweets
-      </li>
-    </ul>
-  </div>
-</div>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- SLIDERS -->
-        <section class="pattern-section">
-          <a name="sliders"></a>
-          <h2 class="mdc-typography--display2">Sliders</h2>
-          <p class="lead">Sliders let users select from a range of values by moving the slider thumb.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Sliders are ideal components for adjusting settings that reflect intensity levels, such as volume, brightness, or color saturation. Sliders may have icons on both ends of the bar that reflect the value intensity. Place the smallest value for the slider range on the left and the largest value on the right.</p>
-              <p><strong>Continuous sliders</strong></p>
-              <p>Continuous sliders allow users to select a value along a subjective range. They do not require a specific value to make adjustments, although they may, in some instances, offer an editable numeric value.</p>
-              <p><strong>Discrete sliders</strong></p>
-              <p>Discrete sliders allow users to select a specific value from a range.</p>
-              <p><a href="https://material.io/guidelines/components/sliders.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <h4>Continuous Slider</h4>
-          <div class="mdc-slider" tabindex="0" role="slider"
-               aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-               aria-label="Select Value"
-               data-mdc-auto-init="MDCSlider">
-            <div class="mdc-slider__track-container">
-              <div class="mdc-slider__track"></div>
-            </div>
-            <div class="mdc-slider__thumb-container">
-              <svg class="mdc-slider__thumb" width="21" height="21">
-                <circle cx="10.5" cy="10.5" r="7.875"></circle>
-              </svg>
-              <div class="mdc-slider__focus-ring"></div>
-            </div>
-          </div>
-          <br><br>
-
-          <h4>Discreet Slider</h4>
-          <div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider"
-               aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-               aria-label="Select Value"
-               data-mdc-auto-init="MDCSlider">
-            <div class="mdc-slider__track-container">
-              <div class="mdc-slider__track"></div>
-            </div>
-            <div class="mdc-slider__thumb-container">
-              <div class="mdc-slider__pin">
-                <span class="mdc-slider__pin-value-marker"></span>
+  <label id="radio-2-label" for="radio-2">Radio 2</label>
+                  </script>
+                </code></pre>
               </div>
-              <svg class="mdc-slider__thumb" width="21" height="21">
-                <circle cx="10.5" cy="10.5" r="7.875"></circle>
-              </svg>
-              <div class="mdc-slider__focus-ring"></div>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#slider-code"
-            aria-expanded="false" aria-controls="slider-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="slider-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
-  <div class="mdc-slider__track-container">
-    <div class="mdc-slider__track"></div>
-  </div>
-  <div class="mdc-slider__thumb-container">
-    <svg class="mdc-slider__thumb" width="21" height="21">
-      <circle cx="10.5" cy="10.5" r="7.875"></circle>
-    </svg>
-    <div class="mdc-slider__focus-ring"></div>
-  </div>
-</div>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- SWITCHES -->
-        <section class="pattern-section">
-          <a name="switches"></a>
-          <h2 class="mdc-typography--display2">Switches</h2>
-          <p class="lead">On/off switches toggle the state of a single settings option.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button. The on/off slide toggle with the text “on” and “off” included within the asset is deprecated. Use the switch shown here instead.</p>
-              <p><a href="https://material.io/guidelines/components/selection-controls.html#selection-controls-switch" target="_blank">View Material Design Guidelines</a></p>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
+            <!-- CHECKBOXES -->
+            <section class="pattern-section">
+              <a name="checkboxes"></a>
+              <h1>Checkboxes</h1>
+              <p class="lead">Just your average checkbox.</p>
 
-          <h3>Examples</h3>
+              <div class="row usage-section">
+                <div class="col-xs-12 col-sm-6">
+                  <h4>What To Do</h4>
+                  <p>Checkboxes allow the user to select multiple options from a set. If you have multiple options appearing in a list, you can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using a checkbox and use an on/off switch instead.</p>
+                  <p><a href="https://material.io/guidelines/components/selection-controls.html#selection-controls-checkbox" target="_blank">View Material Design Guidelines</a></p>
+                </div>
 
-          <h4>Enabled</h4>
-          <div class="mdc-switch">
-            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
-            </div>
-          </div>
-          <label for="basic-switch" class="mdc-switch-label">off/on</label>
-          <br><br>
-
-          <h4>Disabled</h4>
-          <div class="mdc-switch mdc-switch--disabled">
-            <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
-            </div>
-          </div>
-          <label for="another-basic-switch" class="mdc-switch-label">off/on</label>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#switch-code"
-            aria-expanded="false" aria-controls="switch-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="switch-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-switch">
-  <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
-  <div class="mdc-switch__background">
-    <div class="mdc-switch__knob"></div>
-  </div>
-</div>
-<label for="basic-switch" class="mdc-switch-label">off/on</label>
-
-<div class="mdc-switch mdc-switch--disabled">
-  <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
-  <div class="mdc-switch__background">
-    <div class="mdc-switch__knob"></div>
-  </div>
-</div>
-<label for="another-basic-switch" class="mdc-switch-label">off/on</label>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- TEXT FIELDS -->
-        <section class="pattern-section">
-          <a name="text-fields"></a>
-          <h2 class="mdc-typography--display2">Text Fields</h2>
-          <p class="lead">Text fields allow users to input, edit, and select text.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Text fields typically reside in forms but can appear in other places, like dialog boxes and search. Text fields validate input, help users fix errors, autocomplete words, and provide suggestions.</p>
-              <p><a href="https://material.io/guidelines/components/text-fields.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <form action="#" id="greeting-form">
-            <div>
-              <div class="mdc-form-field">
-                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                  <input id="firstname" type="text" class="mdc-textfield__input">
-                  <label for="firstname" class="mdc-textfield__label">
-                    First Name
-                  </label>
-                  <div class="mdc-textfield__bottom-line"></div>
+                <div class="col-xs-12 col-sm-6">
+                  <h4>What Not To Do</h4>
+                  <p>...</p>
                 </div>
               </div>
 
-              <div class="mdc-form-field">
-                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                  <input id="lastname" type="text" class="mdc-textfield__input">
-                  <label for="lastname" class="mdc-textfield__label">
-                    Last Name
-                  </label>
-                  <div class="mdc-textfield__bottom-line"></div>
+              <h4>Examples</h4>
+              <br>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="mdc-form-field">
+                    <div class="mdc-checkbox">
+                      <input type="checkbox"
+                             id="my-checkbox"
+                             class="mdc-checkbox__native-control"/>
+                      <div class="mdc-checkbox__background">
+                        <svg class="mdc-checkbox__checkmark"
+                             viewBox="0 0 24 24">
+                          <path class="mdc-checkbox__checkmark__path"
+                                fill="none"
+                                stroke="white"
+                                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                        </svg>
+                        <div class="mdc-checkbox__mixedmark"></div>
+                      </div>
+                    </div>
+
+                    <label for="my-checkbox">My Checkbox Label</label>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="mdc-checkbox mdc-checkbox--disabled">
+                    <input type="checkbox"
+                           id="basic-disabled-checkbox"
+                           class="mdc-checkbox__native-control"
+                           disabled />
+                    <div class="mdc-checkbox__background">
+                      <svg class="mdc-checkbox__checkmark"
+                           viewBox="0 0 24 24">
+                        <path class="mdc-checkbox__checkmark__path"
+                              fill="none"
+                              stroke="white"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                      <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                  </div>
+                  <label for="basic-disabled-checkbox" id="basic-disabled-checkbox-label">This is my disabled checkbox</label>
                 </div>
               </div>
-            </div>
-          </form>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#textfield-code"
-            aria-expanded="false" aria-controls="textfield-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="textfield-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-textfield">
-  <input type="text" id="my-textfield" class="mdc-textfield__input">
-  <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
-  <div class="mdc-textfield__bottom-line"></div>
-</div>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- LAYOUT GRID -->
-        <section class="pattern-section">
-          <a name="layout-grid"></a>
-          <h2 class="mdc-typography--display2">Layout Grid</h2>
-          <p class="lead">Material Design's responsive 12-column grid layout.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Material design’s responsive UI is based on a 12-column grid layout. This grid creates visual consistency between layouts, while allowing flexibility across a wide variety of designs. The number of grid columns varies based on the breakpoint system.</p>
-              <p>The responsive grid focuses on consistent margin and gutter widths, rather than column width. Material design margins and columns follow an 8dp square baseline grid. Margins and gutters can be 8, 16, 24, or 40dp wide. Margins and gutters don’t need to be equal. For example, it’s acceptable to use 40dp margins and 24dp gutters in the same layout.</p>
-              <p><strong>Full-width grids</strong> use fluid columns and breakpoints to determine when a layout needs to change.</p>
-              <p><strong>Centered grids</strong> use fixed columns and reflow the layout when all columns (plus a defined margin) no longer fit on screen.</p>
-              <p><a href="https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-grid" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-              <div class="mdc-layout-grid__cell">Cell 1</div>
-              <div class="mdc-layout-grid__cell">Cell 2</div>
-              <div class="mdc-layout-grid__cell">Cell 3</div>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#layoutgrid-code"
-            aria-expanded="false" aria-controls="layoutgrid-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="layoutgrid-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell">Cell 1</div>
-    <div class="mdc-layout-grid__cell">Cell 2</div>
-    <div class="mdc-layout-grid__cell">Cell 3</div>
-  </div>
-</div>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- LISTS -->
-        <section class="pattern-section">
-          <a name="lists"></a>
-          <h2 class="mdc-typography--display2">Lists</h2>
-          <p class="lead">Lists present multiple line items vertically as a single continuous element.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Lists are made up of a continuous column of rows. Each row contains a tile. Primary actions fill the tile, and supplemental actions are represented by icons and text. Lists are best suited for similar data types.</p>
-              <p>A <strong>list</strong> consists of a single continuous column of tessellated sub-divisions of equal width called <strong>rows</strong> that function as containers for <strong>tiles</strong>. Tiles hold content, and can vary in height within a list.</p>
-              <p>Lists are best suited to presenting a homogeneous data type or sets of data types, such as images and text. They are optimized for reading comprehension while differentiating either between similar data types, or qualities within a single data type.</p>
-              <p><a href="https://material.io/guidelines/components/lists.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <div class="row">
-            <div class="col-xs-12 col-sm-4">
-              <h4>Basic List</h4>
-              <ul class="mdc-list">
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
-              </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-              <h4>Condensed List</h4>
-              <ul class="mdc-list mdc-list--dense">
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
-              </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-              <h4>Two Line List</h4>
-              <ul class="mdc-list mdc-list--two-line">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    Two-line item
-                    <span class="mdc-list-item__text__secondary">Secondary text</span>
-                  </span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    Two-line item
-                    <span class="mdc-list-item__text__secondary">Secondary text</span>
-                  </span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    Two-line item
-                    <span class="mdc-list-item__text__secondary">Secondary text</span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-              <h4>List With Icons</h4>
-              <ul class="mdc-list">
-                <li class="mdc-list-item">
-                  <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">network_wifi</i>
-                  Wi-Fi
-                </li>
-                <li class="mdc-list-item">
-                  <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">bluetooth</i>
-                  Bluetooth
-                </li>
-                <li class="mdc-list-item">
-                  <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">data_usage</i>
-                  Data Usage
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-              <h4>List With Images</h4>
-              <ul class="mdc-list mdc-list--avatar-list">
-                <li class="mdc-list-item">
-                  <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
-                       width="56" height="56" alt="Picture of Janet Perkins">
-                  Janet Perkins
-                </li>
-                <li class="mdc-list-item">
-                  <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
-                       width="56" height="56" alt="Picture of Mary Johnson">
-                  Mary Johnson
-                </li>
-                <li class="mdc-list-item">
-                  <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
-                       width="56" height="56" alt="Picture of Peter Carlsson">
-                  Peter Carlsson
-                </li>
-              </ul>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#list-code"
-            aria-expanded="false" aria-controls="list-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="list-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<ul class="mdc-list">
-  <li class="mdc-list-item">Single-line item</li>
-  <li class="mdc-list-item">Single-line item</li>
-  <li class="mdc-list-item">Single-line item</li>
-</ul>
-
-<ul class="mdc-list mdc-list--dense">
-  <li class="mdc-list-item">Single-line item</li>
-  <li class="mdc-list-item">Single-line item</li>
-  <li class="mdc-list-item">Single-line item</li>
-</ul>
-
-<ul class="mdc-list mdc-list--two-line">
-  <li class="mdc-list-item">
-    <span class="mdc-list-item__text">
-      Two-line item
-      <span class="mdc-list-item__text__secondary">Secondary text</span>
-    </span>
-  </li>
-</ul>
-
-<ul class="mdc-list">
-  <li class="mdc-list-item">
-    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">network_wifi</i>
-    Wi-Fi
-  </li>
-</ul>
-
-<ul class="mdc-list mdc-list--avatar-list">
-  <li class="mdc-list-item">
-    <img class="mdc-list-item__start-detail" src="https://dummyimage.com/200%20x%20200/cccccc/FFFFFF.gif"
-         width="56" height="56" alt="Picture of Janet Perkins">
-    Janet Perkins
-  </li>
-</ul>
-                </script>
-              </code></pre>
-            </div>
-          </div>
-        </secton>
-
-
-
-        <!-- MENUS -->
-        <section class="pattern-section">
-          <a name="menus"></a>
-          <h2 class="mdc-typography--display2">Menus</h2>
-          <p class="lead">Menus display a list of choices on a transient sheet of material.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Menus appear upon interaction with a button, action, or other control. They display a list of choices, with one choice per line.</p>
-              <p>Menu items may be disabled if not applicable to a certain context. Contextual menus dynamically change their available menu items based on the current state of the app.</p>
-              <p>A menu is a temporary piece of material that appears upon interaction with a button, action, pointer, or other control. It contains at least two menu items.</p>
-              <p>Each menu item consists of a discrete option or action that can affect the app, the view, or selected elements within a view. Menus should not be used as a primary method for navigation within an app.</p>
-              <p><a href="https://material.io/guidelines/components/menus.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <div class="mdc-menu-anchor">
-            <button class="mdc-button mdc-button--raised simple-menu-trigger">Open Menu</button>
-
-            <div class="mdc-simple-menu simple-menu-container" tabindex="-1" data-mdc-auto-init="MDCSimpleMenu">
-              <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
-                <li class="mdc-list-item" role="menuitem" tabindex="0">
-                  A Menu Item
-                </li>
-                <li class="mdc-list-item" role="menuitem" tabindex="0">
-                  Another Menu Item
-                </li>
-              </ul>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#menu-code"
-            aria-expanded="false" aria-controls="menu-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="menu-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-    <div class="mdc-menu-anchor">
-  <button class="mdc-button mdc-button--raised simple-menu-trigger">Open Menu</button>
-
-  <div class="mdc-simple-menu simple-menu-container" tabindex="-1" data-mdc-auto-init="MDCSimpleMenu">
-    <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
-      <li class="mdc-list-item" role="menuitem" tabindex="0">
-        A Menu Item
-      </li>
-      <li class="mdc-list-item" role="menuitem" tabindex="0">
-        Another Menu Item
-      </li>
-    </ul>
-  </div>
-</div>
-                </script>
-              </code></pre>
               <br><br>
 
-              <h3>Calling The Menu</h3>
-              <pre><code class="language-javascript">
-    var menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.simple-menu-container'));
-    document.querySelector('.simple-menu-trigger').addEventListener('click', () => menu.open = !menu.open);
-              </code></pre>
-            </div>
-          </div>
-        </secton>
+              <button class="mdc-button mdc-button--raised code-example-trigger"
+                data-toggle="collapse" data-target="#checkbox-code"
+                aria-expanded="false" aria-controls="checkbox-code">
+                Toggle Code
+              </button>
 
+              <div class="collapse" id="checkbox-code">
+                <div class="card card-body">
+                  <h4>The Code</h4>
+                  <p><a href="">View Material Components Web Documentation</a></p>
 
-
-        <!-- SNACKBARS -->
-        <section class="pattern-section">
-          <a name="snackbars"></a>
-          <h2 class="mdc-typography--display2">Snackbars</h2>
-          <p class="lead">Snackbars provide brief feedback about an operation through a message at the bottom of the screen.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p><strong>Snackbars</strong> contain a single line of text directly related to the operation performed. They may contain a text action, but no icons.</p>
-              <p><strong>Toasts</strong> (Android only) are primarily used for system messaging. They also display at the bottom of the screen, but may not be swiped off-screen.</p>
-              <p>Only one snackbar may be displayed at a time. Each snackbar may contain a single action, neither of which may be “Dismiss” or “Cancel.”</p>
-              <p>Snackbars animate upwards from the bottom edge of the screen.</p>
-              <p><a href="https://material.io/guidelines/components/snackbars-toasts.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <button class="mdc-button mdc-button--raised snackbar-trigger">Gimme A Snack</button>
-
-          <div class="mdc-snackbar"
-               aria-live="assertive" aria-atomic="true" aria-hidden="true"
-               data-mdc-auto-init="MDCSnackbar">
-            <div class="mdc-snackbar__text"></div>
-            <div class="mdc-snackbar__action-wrapper">
-              <button type="button" class="mdc-snackbar__action-button">Thanks!</button>
-            </div>
-          </div>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#snackbar-code"
-            aria-expanded="false" aria-controls="snackbar-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="snackbar-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<button class="mdc-button mdc-button--raised snackbar-trigger">Gimme A Snack</button>
-
-<div class="mdc-snackbar"
-     aria-live="assertive" aria-atomic="true" aria-hidden="true"
-     data-mdc-auto-init="MDCSnackbar">
-  <div class="mdc-snackbar__text"></div>
-  <div class="mdc-snackbar__action-wrapper">
-    <button type="button" class="mdc-snackbar__action-button">Thanks!</button>
-  </div>
-</div>
-                </script>
-              </code></pre>
+                  <pre><code class="language-markup">
+                    <script type="prism-html-markup">
+    <div class="mdc-checkbox">
+      <input type="checkbox" class="mdc-checkbox__native-control"/>
+      <div class="mdc-checkbox__background">
+        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+          <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+        </svg>
+        <div class="mdc-checkbox__mixedmark"></div>
+      </div>
+    </div>
+                    </script>
+                  </code></pre>
+                </div>
+              </div>
               <br><br>
+            </secton>
 
-              <h3>Making It Work</h3>
-              <pre><code class="language-javascript">
-var snackbar = new mdc.snackbar.MDCSnackbar(document.querySelector('.mdc-snackbar'));
-$('.snackbar-trigger').click(function() {
-  snackbar.show({
-    actionOnBottom: true,
-    message: 'You are the coolest!',
-    actionText: 'Thanks',
-    actionHandler: function() {
-     console.log("Stuff is working!");
-   }
-  });
-});
-              </code></pre>
-            </div>
-          </div>
-        </secton>
+            <!-- SWITCHES -->
+            <h4>Switches</h4>
+            <p class="lead">On/off switches toggle the state of a single settings option.</p>
 
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button. The on/off slide toggle with the text “on” and “off” included within the asset is deprecated. Use the switch shown here instead.</p>
+                <p><a href="https://material.io/guidelines/components/selection-controls.html#selection-controls-switch" target="_blank">View Material Design Guidelines</a></p>
+              </div>
 
-
-        <!-- TABS -->
-        <section class="pattern-section">
-          <a name="tabs"></a>
-          <h2 class="mdc-typography--display2">Tabs</h2>
-          <p class="lead">Tabs make it easy to explore and switch between different views.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.</p>
-              <p>Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.</p>
-              <p>Because swipe gestures are used for navigating between tabs, don't pair tabs with content that also supports swiping.</p>
-              <p><strong>Types</strong></p>
-              <ul>
-                <li>Fixed</li>
-                <li>Scrollable</li>
-              </ul>
-              <p><strong>Tab labels</strong></p>
-              <p>Tab labels may include icons and text.</p>
-              <p><strong>Color</strong></p>
-              <p>Apply your app’s accent color, or a contrasting color, to text fields and the text field cursor.</p>
-              <p><a href="https://material.io/guidelines/components/tabs.html" target="_blank">View Material Design Guidelines</a></p>
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
+            <h4>Examples</h4>
+
+            <h4>Enabled</h4>
+            <div class="mdc-switch">
+              <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
+              <div class="mdc-switch__background">
+                <div class="mdc-switch__knob"></div>
+              </div>
             </div>
-          </div>
+            <label for="basic-switch" class="mdc-switch-label">off/on</label>
+            <br><br>
 
-          <h3>Examples</h3>
-
-          <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text" data-mdc-auto-init="MDCTabBar">
-            <a class="mdc-tab mdc-tab--with-icon-and-text mdc-tab--active" href="#recents">
-              <i class="material-icons mdc-tab__icon" aria-hidden="true">phone</i>
-              <span class="mdc-tab__icon-text">Recents</span>
-            </a>
-            <a class="mdc-tab mdc-tab--with-icon-and-text" href="#favorites">
-              <i class="material-icons mdc-tab__icon" aria-hidden="true">favorite</i>
-              <span class="mdc-tab__icon-text">Favorites</span>
-            </a>
-            <a class="mdc-tab mdc-tab--with-icon-and-text" href="#nearby">
-              <i class="material-icons mdc-tab__icon" aria-hidden="true">person_pin</i>
-              <span class="mdc-tab__icon-text">Nearby</span>
-            </a>
-            <span class="mdc-tab-bar__indicator"></span>
-          </nav>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#tabs-code"
-            aria-expanded="false" aria-controls="tabs-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="tabs-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text" data-mdc-auto-init="MDCTabBar">
-  <a class="mdc-tab mdc-tab--with-icon-and-text mdc-tab--active" href="#recents">
-    <i class="material-icons mdc-tab__icon" aria-hidden="true">phone</i>
-    <span class="mdc-tab__icon-text">Recents</span>
-  </a>
-  <a class="mdc-tab mdc-tab--with-icon-and-text" href="#favorites">
-    <i class="material-icons mdc-tab__icon" aria-hidden="true">favorite</i>
-    <span class="mdc-tab__icon-text">Favorites</span>
-  </a>
-  <a class="mdc-tab mdc-tab--with-icon-and-text" href="#nearby">
-    <i class="material-icons mdc-tab__icon" aria-hidden="true">person_pin</i>
-    <span class="mdc-tab__icon-text">Nearby</span>
-  </a>
-  <span class="mdc-tab-bar__indicator"></span>
-</nav>
-                </script>
-              </code></pre>
+            <h4>Disabled</h4>
+            <div class="mdc-switch mdc-switch--disabled">
+              <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
+              <div class="mdc-switch__background">
+                <div class="mdc-switch__knob"></div>
+              </div>
             </div>
-          </div>
-        </secton>
+            <label for="another-basic-switch" class="mdc-switch-label">off/on</label>
+            <br><br>
 
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#switch-code"
+              aria-expanded="false" aria-controls="switch-code">
+              Toggle Code
+            </button>
 
+            <div class="collapse" id="switch-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
 
-        <!-- TOOLBARS -->
-        <section class="pattern-section">
-          <a name="toolbars"></a>
-          <h2 class="mdc-typography--display2">Toolbars</h2>
-          <p class="lead">Toolbar actions appear above the view affected by their actions.</p>
-
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Toolbars appear a step above the content they affect. They may constrain their width to accommodate material passing over them. Do not separate a toolbar’s actions by another sheet of material, unless it is transient, such as a menu or dialog.</p>
-              <p>Toolbars appear a step above the sheet of material affected by their actions. When sheets scroll underneath toolbars, they are clipped and cannot pass through to the opposite side.</p>
-              <p><a href="https://material.io/guidelines/components/toolbars.html" target="_blank">View Material Design Guidelines</a></p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <h3>Examples</h3>
-
-          <header class="mdc-toolbar" data-mdc-auto-init="MDCToolbar">
-            <div class="mdc-toolbar__row">
-              <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-                <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
-                <span class="mdc-toolbar__title">Title</span>
-              </section>
-            </div>
-          </header>
-          <br><br>
-
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#toolbar-code"
-            aria-expanded="false" aria-controls="toolbar-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="toolbar-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<header class="mdc-toolbar" data-mdc-auto-init="MDCToolbar">
-  <div class="mdc-toolbar__row">
-    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-      <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
-      <span class="mdc-toolbar__title">Title</span>
-    </section>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-switch">
+    <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
+    <div class="mdc-switch__background">
+      <div class="mdc-switch__knob"></div>
+    </div>
   </div>
-</header>
-                </script>
-              </code></pre>
+  <label for="basic-switch" class="mdc-switch-label">off/on</label>
+
+  <div class="mdc-switch mdc-switch--disabled">
+    <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
+    <div class="mdc-switch__background">
+      <div class="mdc-switch__knob"></div>
+    </div>
+  </div>
+  <label for="another-basic-switch" class="mdc-switch-label">off/on</label>
+                  </script>
+                </code></pre>
+              </div>
             </div>
-          </div>
-        </secton>
+          </secton>
 
 
 
-        <!-- TYPOGRAPHY -->
-        <section class="pattern-section">
-          <a name="typography"></a>
-          <h2 class="mdc-typography--display2">Typography</h2>
-          <p class="lead">Premera uses Lato and Roboto.</p>
+          <!-- SELECT MENUS -->
+          <section class="pattern-section">
+            <a name="select-menus"></a>
+            <h1>Select Menus</h1>
+            <p class="lead">Menus display a list of choices on a transient sheet of material.</p>
 
-          <div class="row usage-section">
-            <div class="col-xs-12 col-sm-6">
-              <h3>What To Do</h3>
-              <p>Material Design’s text sizes and styles were developed to balance content density and reading comfort under typical usage conditions.</p>
-              <p>MDC Typography is a foundational module that applies these styles to MDC Web components. The typographic styles in this module are derived from ten styles</p>
-              <p><a href="https://material.io/guidelines/style/typography.html" target="_blank">View Material Design Guidelines</a></p>
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Menus appear upon interaction with a button, action, or other control. They display a list of choices, with one choice per line. Menu items may be disabled if not applicable to a certain context. Contextual menus dynamically change their available menu items based on the current state of the app.</p>
+                <p><a href="https://material.io/guidelines/components/menus.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>Menus should not be used as a primary method for navigation within an app.</p>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <h3>What Not To Do</h3>
-              <p>...</p>
+            <h4>Examples</h4>
+
+            <div class="mdc-select" role="listbox" tabindex="0" data-mdc-auto-init="MDCSelect">
+              <span class="mdc-select__selected-text">Pick a food group</span>
+              <div class="mdc-simple-menu mdc-select__menu">
+                <ul class="mdc-list mdc-simple-menu__items">
+                  <li class="mdc-list-item" role="option" id="grains" aria-disabled="true">
+                    Pick a food group
+                  </li>
+                  <li class="mdc-list-item" role="option" id="grains" tabindex="0">
+                    Bread, Cereal, Rice, and Pasta
+                  </li>
+                  <li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
+                    Vegetables
+                  </li>
+                  <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
+                    Fruit
+                  </li>
+                  <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
+                    Milk, Yogurt, and Cheese
+                  </li>
+                  <li class="mdc-list-item" role="option" id="meat" tabindex="0">
+                    Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+                  </li>
+                  <li class="mdc-list-item" role="option" id="fats" tabindex="0">
+                    Fats, Oils, and Sweets
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+            <br><br>
 
-          <h3>Examples</h3>
-          <p>The classes are a little non-intuitive so have a good look.</p>
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#select-code"
+              aria-expanded="false" aria-controls="select-code">
+              Toggle Code
+            </button>
 
-          <h1 class="mdc-typography--display4">Display 4</h1>
-          <h2 class="mdc-typography--display3">Display 3</h2>
-          <h3 class="mdc-typography--display2">Display 2</h3>
-          <h4 class="mdc-typography--display1">Display 1</h4>
-          <h1 class="mdc-typography--headline">Headline</h1>
-          <h1 class="mdc-typography--title">Title</h1>
-          <h5 class="mdc-typography--subheading-2">Subheading 2</h5>
-          <h6 class="mdc-typography--subheading-1">Subheading 1</h6>
-          <p class="mdc-typography--body2">This paragraph is body 2, whatever that means.</p>
-          <p class="mdc-typography--body1">This paragraph is body 1, which is equally concerning.</p>
-          <p class="mdc-typography--caption">I'm a caption.</p>
-          <br><br>
+            <div class="collapse" id="select-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
 
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#typography-code"
-            aria-expanded="false" aria-controls="typography-code">
-            Toggle Code
-          </button>
-
-          <div class="collapse" id="typography-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
-
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<h1 class="mdc-typography--display4">Display 4</h1>
-<h2 class="mdc-typography--display3">Display 3</h2>
-<h3 class="mdc-typography--display2">Display 2</h3>
-<h4 class="mdc-typography--display1">Display 1</h4>
-<h1 class="mdc-typography--headline">Headline</h1>
-<h1 class="mdc-typography--title">Title</h1>
-<h5 class="mdc-typography--subheading-2">Subheading 2</h5>
-<h6 class="mdc-typography--subheading-1">Subheading 1</h6>
-<p class="mdc-typography--body2">This paragraph is body 2, whatever that means.</p>
-<p class="mdc-typography--body1">This paragraph is body 1, which is equally concerning.</p>
-<p class="mdc-typography--caption">Im a caption.</p>
-                </script>
-              </code></pre>
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-select" role="listbox" tabindex="0">
+    <span class="mdc-select__selected-text">Pick a food group</span>
+    <div class="mdc-simple-menu mdc-select__menu">
+      <ul class="mdc-list mdc-simple-menu__items">
+        <li class="mdc-list-item" role="option" id="grains" aria-disabled="true">
+          Pick a food group
+        </li>
+        <li class="mdc-list-item" role="option" id="grains" tabindex="0">
+          Bread, Cereal, Rice, and Pasta
+        </li>
+        <li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
+          Vegetables
+        </li>
+        <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
+          Fruit
+        </li>
+        <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
+          Milk, Yogurt, and Cheese
+        </li>
+        <li class="mdc-list-item" role="option" id="meat" tabindex="0">
+          Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+        </li>
+        <li class="mdc-list-item" role="option" id="fats" tabindex="0">
+          Fats, Oils, and Sweets
+        </li>
+      </ul>
+    </div>
+  </div>
+                  </script>
+                </code></pre>
+              </div>
             </div>
-          </div>
-        </secton>
-
-        <br><br><br><br><br><br><br><br>
-        <hr />
+          </secton>
 
 
-        <!-- FORM FIELDS -->
-        <section class="pattern-section">
-          <a name="form-fields"></a>
-          <h2 class="mdc-typography--display2">Form Fields</h2>
-          <p class="lead">MDC Form Field provides an mdc-form-field helper class for easily making theme-aware, RTL-aware form field + label combos. It also provides an MDCFormField class for easily making input ripples respond to label events.</p>
 
-          <div class="mdc-form-field">
-            <input type="checkbox" id="input">
-            <label for="input">Input Label</label>
-          </div>
-          <br><br>
+          <!-- Date Picker -->
+          <section class="pattern-section">
+            <a name="date-pickers"></a>
+            <h1>Date Picker</h1>
+            <p class="lead">....</p>
+          </section>
 
-          <div class="mdc-form-field mdc-form-field--align-end">
-            <input type="checkbox" id="input">
-            <label for="input">Input Label</label>
-          </div>
-          <br><br>
 
-          <button class="mdc-button mdc-button--raised code-example-trigger"
-            data-toggle="collapse" data-target="#field-code"
-            aria-expanded="false" aria-controls="field-code">
-            Toggle Code
-          </button>
 
-          <div class="collapse" id="field-code">
-            <div class="card card-body">
-              <h3>The Code</h3>
-              <p><a href="">View Material Components Web Documentation</a></p>
+          <!-- SLIDERS -->
+          <section class="pattern-section">
+            <a name="sliders"></a>
+            <h1>Sliders</h1>
+            <p class="lead">Sliders let users select from a range of values by moving the slider thumb.</p>
 
-              <pre><code class="language-markup">
-                <script type="prism-html-markup">
-<div class="mdc-form-field">
-  <input type="checkbox" id="input">
-  <label for="input">Input Label</label>
-</div>
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Sliders are ideal components for adjusting settings that reflect intensity levels, such as volume, brightness, or color saturation. Sliders may have icons on both ends of the bar that reflect the value intensity. Place the smallest value for the slider range on the left and the largest value on the right.</p>
+                <p><strong>Continuous sliders</strong></p>
+                <p>Continuous sliders allow users to select a value along a subjective range. They do not require a specific value to make adjustments, although they may, in some instances, offer an editable numeric value.</p>
+                <p><strong>Discrete sliders</strong></p>
+                <p>Discrete sliders allow users to select a specific value from a range.</p>
+                <p><a href="https://material.io/guidelines/components/sliders.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
 
-<div class="mdc-form-field mdc-form-field--align-end">
-  <input type="checkbox" id="input">
-  <label for="input">Input Label</label>
-</div>
-                </script>
-              </code></pre>
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
             </div>
-          </div>
-        </secton>
-        <!-- END ALL SECTIONS -->
-      </main>
+
+            <h4>Examples</h4>
+
+            <h4>Continuous Slider</h4>
+            <div class="mdc-slider" tabindex="0" role="slider"
+                 aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                 aria-label="Select Value"
+                 data-mdc-auto-init="MDCSlider">
+              <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+              </div>
+              <div class="mdc-slider__thumb-container">
+                <svg class="mdc-slider__thumb" width="21" height="21">
+                  <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                </svg>
+                <div class="mdc-slider__focus-ring"></div>
+              </div>
+            </div>
+            <br><br>
+
+            <h4>Discreet Slider</h4>
+            <div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider"
+                 aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                 aria-label="Select Value"
+                 data-mdc-auto-init="MDCSlider">
+              <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+              </div>
+              <div class="mdc-slider__thumb-container">
+                <div class="mdc-slider__pin">
+                  <span class="mdc-slider__pin-value-marker"></span>
+                </div>
+                <svg class="mdc-slider__thumb" width="21" height="21">
+                  <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                </svg>
+                <div class="mdc-slider__focus-ring"></div>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#slider-code"
+              aria-expanded="false" aria-controls="slider-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="slider-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <div class="mdc-slider" tabindex="0" role="slider"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+       aria-label="Select Value">
+    <div class="mdc-slider__track-container">
+      <div class="mdc-slider__track"></div>
+    </div>
+    <div class="mdc-slider__thumb-container">
+      <svg class="mdc-slider__thumb" width="21" height="21">
+        <circle cx="10.5" cy="10.5" r="7.875"></circle>
+      </svg>
+      <div class="mdc-slider__focus-ring"></div>
+    </div>
+  </div>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+
+          <!-- TYPOGRAPHY ------------------------------------------------ -->
+
+          <h1 class="section-header">Typography</h1>
+
+          <!-- TYPOGRAPHY -->
+          <section class="pattern-section">
+            <a name="typography"></a>
+            <h1>Typography</h1>
+            <p class="lead">Premera uses Lato and Roboto.</p>
+
+            <div class="row usage-section">
+              <div class="col-xs-12 col-sm-6">
+                <h4>What To Do</h4>
+                <p>Material Design’s text sizes and styles were developed to balance content density and reading comfort under typical usage conditions.</p>
+                <p>MDC Typography is a foundational module that applies these styles to MDC Web components. The typographic styles in this module are derived from ten styles</p>
+                <p><a href="https://material.io/guidelines/style/typography.html" target="_blank">View Material Design Guidelines</a></p>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <h4>What Not To Do</h4>
+                <p>...</p>
+              </div>
+            </div>
+
+            <h4>Examples</h4>
+            <p>The classes are a little non-intuitive so have a good look.</p>
+
+            <h1 class="mdc-typography--display4">Display 4</h1>
+            <h1 class="mdc-typography--display3">Display 3</h1>
+            <h4 class="mdc-typography--display2">Display 2</h4>
+            <h4 class="mdc-typography--display1">Display 1</h4>
+            <h1 class="mdc-typography--headline">Headline</h1>
+            <h1 class="mdc-typography--title">Title</h1>
+            <h5 class="mdc-typography--subheading-2">Subheading 2</h5>
+            <h6 class="mdc-typography--subheading-1">Subheading 1</h6>
+            <p class="mdc-typography--body2">This paragraph is body 2, whatever that means.</p>
+            <p class="mdc-typography--body1">This paragraph is body 1, which is equally concerning.</p>
+            <p class="mdc-typography--caption">I'm a caption.</p>
+            <br><br>
+
+            <button class="mdc-button mdc-button--raised code-example-trigger"
+              data-toggle="collapse" data-target="#typography-code"
+              aria-expanded="false" aria-controls="typography-code">
+              Toggle Code
+            </button>
+
+            <div class="collapse" id="typography-code">
+              <div class="card card-body">
+                <h4>The Code</h4>
+                <p><a href="">View Material Components Web Documentation</a></p>
+
+                <pre><code class="language-markup">
+                  <script type="prism-html-markup">
+  <h1 class="mdc-typography--display4">Display 4</h1>
+  <h1 class="mdc-typography--display3">Display 3</h1>
+  <h4 class="mdc-typography--display2">Display 2</h4>
+  <h4 class="mdc-typography--display1">Display 1</h4>
+  <h1 class="mdc-typography--headline">Headline</h1>
+  <h1 class="mdc-typography--title">Title</h1>
+  <h5 class="mdc-typography--subheading-2">Subheading 2</h5>
+  <h6 class="mdc-typography--subheading-1">Subheading 1</h6>
+  <p class="mdc-typography--body2">This paragraph is body 2, whatever that means.</p>
+  <p class="mdc-typography--body1">This paragraph is body 1, which is equally concerning.</p>
+  <p class="mdc-typography--caption">Im a caption.</p>
+                  </script>
+                </code></pre>
+              </div>
+            </div>
+          </secton>
+
+
+
+          <!-- Links -->
+          <section class="pattern-section">
+            <a name="links"></a>
+            <h1>Links</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Dash Separator -->
+          <section class="pattern-section">
+            <a name="dash-separator"></a>
+            <h1>Dash Separator</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+
+          <!-- STYLE & BRANDING ------------------------------------------------ -->
+
+          <h1 class="section-header">Style &amp; Branding</h1>
+
+          <!-- Color Scheme -->
+          <section class="pattern-section">
+            <a name="color-scheme"></a>
+            <h1>Color Scheme</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Logo -->
+          <section class="pattern-section">
+            <a name="logo"></a>
+            <h1>Logo</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Style -->
+          <section class="pattern-section">
+            <a name="style"></a>
+            <h1>Style</h1>
+            <p class="lead">Premera's brand aesthetic is light, breathable, and asymmetrical.</p>
+
+            <h4>What To Do</h4>
+            <p>...</p>
+
+            <h4>What Not To Do</h4>
+            <p>...</p>
+          </section>
+
+
+
+          <!-- Photography -->
+          <section class="pattern-section">
+            <a name="photography"></a>
+            <h1>Photography</h1>
+            <p class="lead">....</p>
+          </section>
+
+
+
+          <!-- Voice -->
+          <section class="pattern-section">
+            <a name="voice"></a>
+            <h1>Voice</h1>
+            <p class="lead">....</p>
+          </section>
+
+          <!-- END ALL SECTIONS -->
+        </main>
+      </div>
     </div>
 
 
@@ -1899,6 +2211,30 @@ $('.snackbar-trigger').click(function() {
            console.log("Stuff is working!");
          }
         });
+      });
+
+      /* Make the Sidebar fixed once scrolled */
+      var NAVFROMTOP = $('.sidebar-nav-container').offset().top;
+
+      /* Make the Sidebar fixed once scrolled */
+      $(window).scroll(function(){
+        var sidebarNav = $('.sidebar-nav-container');
+        var isPositionFixed = (sidebarNav.css('position') == 'fixed'); /* True if fixed */
+
+        /* If window is scrolled beyond the amount of space originally
+        between the top of the page and the top of the sidebar nav,
+        AND position of the sidebar nav is not yet fixed... add fixed */
+        if ($(this).scrollTop() > NAVFROMTOP && !isPositionFixed){
+          sidebarNav.css({'position': 'fixed', 'top': '0px'});
+        }
+
+        /* On the other hand, if the window is NOT scrolled beyond
+        the amount of space originally between the top of the page
+        and the top of the sidebar nav, remove position fixed */
+        if ($(this).scrollTop() < NAVFROMTOP && isPositionFixed)
+        {
+          sidebarNav.css({'position': 'static', 'top': '0px'});
+        }
       });
     </script>
 

@@ -5,7 +5,7 @@
   --mdc-theme-secondary: #FF7C76;
   --mdc-theme-secondary-light: yellow;
   --mdc-theme-secondary-dark:green;
-  --mdc-theme-background: #fefefe;
+  --mdc-theme-background: #f6f6f6;
 
   --mdc-theme-text-primary-on-primary: white;
   --mdc-theme-text-secondary-on-primary: rgba(255, 255, 255, 0.7);
@@ -76,12 +76,39 @@ h2 {
 }
 
 /* Make page layout float properly */
+.page-background-hero {
+  background-color: #EFEFEF;
+  position: absolute;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .page-container {
   display: flex;
   flex: 1 1 auto;
   height: 100%;
   box-sizing: border-box;
   max-width: 1366px;
+  z-index: 10;
+}
+
+header {
+  max-width: 1000px;
+  margin: 40px auto;
+  z-index: 10;
+  text-align: left;
+}
+
+.main-content-area {
+  background-color: white;
+}
+
+.main-sidebar {
+  border-right: 1px solid #DDD;
 }
 
 .main-content {
@@ -92,12 +119,20 @@ h2 {
   margin-bottom: 30px;
 }
 
+.nav-header {
+  font-weight: 800;
+}
+
 /* Make the top header not pink */
 .mdc-toolbar__row {
   background-color: #0099d8;
 }
 
-.mdc-card .mdc-card__media {
+.example-card > .mdc-card__media {
+  height: 9em;
+}
+
+#card-example-2 .mdc-card__media {
   background-image: url("https://www.premera.com/images/Style_Guide/Jumbotron_Woman_650x275.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,9 +164,19 @@ h2 {
   width: 100%;
 }
 
+.section-header {
+  font-size: 3.5rem;
+  margin-bottom: 80px;
+}
+
 .pattern-section {
-  margin-top: 120px;
-  padding-top: 60px;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 120px;
+  padding-bottom: 60px;
+}
+
+.sidebar-nav-container li.nav-section {
+  padding: 10px 0;
 }
 
 
@@ -155,4 +200,9 @@ h2 {
       background-color: #AAAAAA;
     }
   }
+}
+
+
+.page-container .main-sidebar .mdc-list-item {
+  white-space: normal;
 }
