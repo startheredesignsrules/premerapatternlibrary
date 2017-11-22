@@ -289,8 +289,8 @@
 
             <div class="row">
               <div class="col-xs-12 col-sm-4">
-                <div id="card-example-2" class="mdc-card">
-                  <section class="mdc-card__media example-card"></section>
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__media"></section>
                   <section class="mdc-card__primary">
                     <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
                   </section>
@@ -304,10 +304,10 @@
               </div>
 
               <div class="col-xs-12 col-sm-8">
-                <div id="card-example-2" class="mdc-card">
+                <div class="mdc-card example-card">
                   <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                      <section class="mdc-card__media example-card"></section>
+                      <section class="mdc-card__media"></section>
                     </div>
 
                     <div class="col-xs-12 col-sm-6">
@@ -327,7 +327,7 @@
 
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <div class="mdc-card">
+                    <div class="mdc-card example-card">
                       <section class="mdc-card__primary">
                         <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
                       </section>
@@ -339,7 +339,7 @@
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
-                    <div class="mdc-card">
+                    <div class="mdc-card example-card">
                       <section class="mdc-card__supporting-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       </section>
@@ -352,8 +352,8 @@
 
             <div class="row">
               <div class="col-xs-12 col-sm-4">
-                <div id="card-example-2" class="mdc-card">
-                  <section class="mdc-card__media example-card"></section>
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__media"></section>
                   <section class="mdc-card__primary">
                     <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
                   </section>
@@ -371,7 +371,7 @@
               </div>
 
               <div class="col-xs-12 col-sm-4">
-                <div id="card-example-2" class="mdc-card">
+                <div class="mdc-card example-card">
                   <section class="mdc-card__primary">
                     <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
                   </section>
@@ -381,13 +381,13 @@
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.
                   </section>
-                  <section class="mdc-card__media example-card"></section>
+                  <section class="mdc-card__media"></section>
                 </div>
               </div>
 
               <div class="col-xs-12 col-sm-4">
-                <div id="card-example-2" class="mdc-card">
-                  <section class="mdc-card__media example-card"></section>
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__media"></section>
                   <section class="mdc-card__primary">
                     <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
                   </section>
@@ -397,17 +397,162 @@
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.
                   </section>
-                  <section class="mdc-card__actions">
+                  <section class="mdc-card__actions expandable-actions">
                     <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-                    <button class="mdc-button mdc-button--compact mdc-card__action material-icons">
+                    <button class="mdc-button mdc-button--compact mdc-card__action material-icons"
+                    data-toggle="collapse" data-target="#card-expanded"
+                    aria-expanded="false" aria-controls="card-expanded">
                       <span class="mdc-fab__icon">
                         keyboard_arrow_down
                       </span>
                     </button>
                   </section>
-                  <section class="mdc-card__supporting-text hidden">
+                  <section id="card-expanded" class="mdc-card__supporting-text collapse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt.
+                  </section>
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-8">
+                <div class="mdc-card example-card">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <section class="mdc-card__media"></section>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                      <section class="mdc-card__primary">
+                        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                      </section>
+                      <section class="mdc-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor, dude.
+                      </section>
+                      <section class="mdc-card__actions">
+                        <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                        <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                  </section>
+                  <section class="mdc-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore.
+                  </section>
+                  <section class="mdc-card__actions expandable-actions">
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                    <button class="mdc-button mdc-button--compact mdc-card__action material-icons"
+                    data-toggle="collapse" data-target="#card-expanded-mini"
+                    aria-expanded="false" aria-controls="card-expanded-mini">
+                      <span class="mdc-fab__icon">
+                        keyboard_arrow_down
+                      </span>
+                    </button>
+                  </section>
+                  <section id="card-expanded-mini" class="mdc-card__supporting-text collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.
+                  </section>
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__media"></section>
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                  </section>
+                </div>
+                <br><br>
+
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                  </section>
+                  <section class="mdc-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore.
+                  </section>
+                  <section class="mdc-card__actions">
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                  </section>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__media"></section>
+                  <section class="mdc-card__supporting-text mdc-card__list">
+                    <ul class="mdc-list mdc-list--two-line mdc-list--separated">
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                          Two-line item
+                          <span class="mdc-list-item__text__secondary">Secondary text</span>
+                        </span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                          Two-line item
+                          <span class="mdc-list-item__text__secondary">Secondary text</span>
+                        </span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                          Two-line item
+                          <span class="mdc-list-item__text__secondary">Secondary text</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="mdc-card__actions">
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                  </section>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <div class="mdc-card example-card">
+                  <section class="mdc-card__supporting-text mdc-card__list">
+                    <ul class="mdc-list mdc-list--two-line mdc-list--separated">
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                          Two-line item
+                          <span class="mdc-list-item__text__secondary">Secondary text</span>
+                        </span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                          Two-line item
+                          <span class="mdc-list-item__text__secondary">Secondary text</span>
+                        </span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                          Two-line item
+                          <span class="mdc-list-item__text__secondary">Secondary text</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="mdc-card__actions">
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
                   </section>
                 </div>
               </div>
@@ -425,63 +570,251 @@
                 <h4>The Code</h4>
                 <pre><code class="language-markup">
                   <script type="prism-html-markup">
-  <div class="mdc-card example-card">
-    <section class="mdc-card__media mdc-theme--primary-bg">
-      <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Title goes here</h1>
-      <h1 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h1>
-    </section>
-    <section class="mdc-card__actions">
-      <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-      <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-    </section>
-  </div>
 
-  <div id="card-example-2" class="mdc-card">
-    <section class="mdc-card__media example-card"></section>
-    <section class="mdc-card__primary">
-      <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-      <h1 class="mdc-card__subtitle">Subtitle here</h1>
-    </section>
-    <section class="mdc-card__supporting-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
-    </section>
-    <section class="mdc-card__actions">
-      <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-      <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-    </section>
+<div class="mdc-card example-card">
+  <section class="mdc-card__media"></section>
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <section class="mdc-card__media"></section>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+      </section>
+      <section class="mdc-card__supporting-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam.
+      </section>
+    </div>
   </div>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore.
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__media"></section>
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </section>
+  <section class="mdc-card__media"></section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__media"></section>
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </section>
+  <section class="mdc-card__actions expandable-actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action material-icons"
+    data-toggle="collapse" data-target="#card-expanded"
+    aria-expanded="false" aria-controls="card-expanded">
+      <span class="mdc-fab__icon">
+        keyboard_arrow_down
+      </span>
+    </button>
+  </section>
+  <section id="card-expanded" class="mdc-card__supporting-text collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt.
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <section class="mdc-card__media"></section>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+      </section>
+      <section class="mdc-card__supporting-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor, dude.
+      </section>
+      <section class="mdc-card__actions">
+        <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+        <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore.
+  </section>
+  <section class="mdc-card__actions expandable-actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action material-icons"
+    data-toggle="collapse" data-target="#card-expanded-mini"
+    aria-expanded="false" aria-controls="card-expanded-mini">
+      <span class="mdc-fab__icon">
+        keyboard_arrow_down
+      </span>
+    </button>
+  </section>
+  <section id="card-expanded-mini" class="mdc-card__supporting-text collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt.
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__media"></section>
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore.
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__media"></section>
+  <section class="mdc-card__supporting-text mdc-card__list">
+    <ul class="mdc-list mdc-list--two-line mdc-list--separated">
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          Two-line item
+          <span class="mdc-list-item__text__secondary">Secondary text</span>
+        </span>
+      </li>
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          Two-line item
+          <span class="mdc-list-item__text__secondary">Secondary text</span>
+        </span>
+      </li>
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          Two-line item
+          <span class="mdc-list-item__text__secondary">Secondary text</span>
+        </span>
+      </li>
+    </ul>
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+  </section>
+</div>
+
+<div class="mdc-card example-card">
+  <section class="mdc-card__supporting-text mdc-card__list">
+    <ul class="mdc-list mdc-list--two-line mdc-list--separated">
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          Two-line item
+          <span class="mdc-list-item__text__secondary">Secondary text</span>
+        </span>
+      </li>
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          Two-line item
+          <span class="mdc-list-item__text__secondary">Secondary text</span>
+        </span>
+      </li>
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          Two-line item
+          <span class="mdc-list-item__text__secondary">Secondary text</span>
+        </span>
+      </li>
+    </ul>
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+  </section>
+</div>
                   </script>
                 </code></pre>
                 <br>
 
-                <h4>Adding The Colored Area or Image</h4>
-                <p>The base code in Material.io doesn't come with a section for images, so you have to add that in HTML and add custom CSS for it.</p>
-
-                <pre><code class="language-markup">
-                  <script type="prism-html-markup">
-  <section class="mdc-card__media mdc-theme--primary-bg">
-    <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Title goes here</h1>
-    <h1 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h1>
-  </section>
-
-  <section class="mdc-card__media"></section>
-                  </script>
-                </code></pre>
+                <h4>Adding The Image</h4>
+                <p>The image and it's height need custom CSS.</p>
 
 
                 <pre><code class="language-css">
-  .example-card > .mdc-card__media {
-    height: 9em;
-  }
-
-  #example-card-2 .mdc-card__media {
+  .example-card .mdc-card__media {
     background-image: url("https://www.premera.com/images/Style_Guide/Jumbotron_Woman_650x275.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px; /* Note: Height works in conjunction with height of card */
+    height: 9em;
   }
                 </code></pre>
                 <br>

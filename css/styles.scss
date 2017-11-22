@@ -134,11 +134,7 @@ header {
   background-color: #0099d8;
 }
 
-.example-card > .mdc-card__media {
-  height: 9em;
-}
-
-#card-example-2 .mdc-card__media {
+.example-card .mdc-card__media {
   background-image: url("https://www.premera.com/images/Style_Guide/Jumbotron_Woman_650x275.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,6 +179,14 @@ header {
   padding-bottom: 60px;
 }
 
+.d-none {
+  display: none;
+}
+
+.float-right {
+  float: right;
+}
+
 .sidebar-nav-container li.nav-section {
   padding: 10px 0;
 }
@@ -220,3 +224,33 @@ header {
 
 /* MATERIAL COMPONENTS WEB OVERRIDES / Pass on to dev
 =============================================================== */
+
+
+.mdc-card__actions.expandable-actions {
+  justify-content: space-between;
+}
+
+/* New List Style */
+.mdc-list.mdc-list--separated {
+  li {
+    border-bottom: 1px solid #CCC;
+
+     &:last-child {
+       border: none;
+     }
+  }
+}
+
+.mdc-card__supporting-text.mdc-card__list {
+  padding: 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
