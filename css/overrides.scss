@@ -1,0 +1,113 @@
+/* overrides.scss
+   This stylesheet contains overrides and expansions to Material Components Web.
+   
+   This stylesheet uses the BEM (Block Element Modifier) naming convention,
+   which is what's being used by Google for Material Components Web.
+
+   See links for reference:
+     * http://getbem.com/naming/
+     * https://css-tricks.com/bem-101/
+*/
+
+/* HELPER CLASSES
+   These classes have been borrowed from Bootstrap 4.0. In our
+   upcoming website redesign, we might not be using Bootstrap
+   beyond the Grid System, so we will need SOME replacement
+   for these classes, probably.
+=============================================================== */
+
+.lead {
+  font-size: 130%;
+  margin-bottom: 40px;
+}
+
+.d-none {
+  display: none;
+}
+
+.float-right {
+  float: right;
+}
+
+
+
+
+/* MATERIAL COMPONENTS WEB : OVERRIDES AND EXPANSIONS
+   Ideally this is clean, modular, smart code we can pass on to
+   our development team for use in the redesign.
+=============================================================== */
+
+/* COLOR THEMING */
+:root {
+  --mdc-theme-primary: #FF7C76;
+  --mdc-theme-secondary: #FF7C76;
+  --mdc-theme-background: #f6f6f6;
+}
+
+
+/* BUTTONS */
+.mdc-button {
+
+/* Out of the box, the icons inside of buttons are not properly positioned.
+   Perhaps they will fix this in a future update. For now... */
+
+  .material-icons {
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+  }
+}
+
+
+/* LISTS */
+.mdc-list {
+
+  /* Create NEW LIST STYLE that has full-width borders between list items and appropriate padding */
+
+  /* New modifier class */
+  &.mdc-list--separated {
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid #CCC;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+
+/* CARDS */
+.mdc-card {
+
+  /* If card has a right-aligned expand button, .mdc-card__actions needs to allow right-aligning */
+  /* TO DO : This actually will not work if there are 2 buttons in addition to the expanding button */
+
+  /* Existing mdc class */
+  .mdc-card__actions {
+
+    /* New modifier class */
+    &.mdc-card__actions--justified {
+      justify-content: space-between;
+    }
+  }
+
+  /* When a card's supporting text is actually a list, modify the container to allow list to be full width. */
+
+  /* Existing mdc class */
+  .mdc-card__supporting-text {
+
+    /* New modifier class */
+    &.mdc-card--list {
+      padding: 0;
+
+      ul {
+        margin: 0;
+      }
+    }
+  }
+}
