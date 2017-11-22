@@ -3037,66 +3037,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script type="text/javascript" src="js/prism.js"></script>
-
-    <script type="text/javascript">
-
-      /* Back to Top Button */
-      $('#btn--back-to-top').click(function() {
-        window.scroll({
-          top: 0,
-          behavior: 'smooth'
-        })
-      });
-
-      /* Make the Sidebar fixed once scrolled */
-      var NAVFROMTOP = $('.page__navigation').offset().top;
-
-      /* Make the Sidebar fixed once scrolled */
-      $(window).scroll(function(){
-        var sidebarNav = $('.page__navigation');
-        var isPositionFixed = (sidebarNav.css('position') == 'fixed'); /* True if fixed */
-
-        /* If window is scrolled beyond the amount of space originally
-        between the top of the page and the top of the sidebar nav,
-        AND position of the sidebar nav is not yet fixed... add fixed */
-        if ($(this).scrollTop() > NAVFROMTOP && !isPositionFixed){
-          sidebarNav.css({'position': 'fixed', 'top': '0px'});
-        }
-
-        /* On the other hand, if the window is NOT scrolled beyond
-        the amount of space originally between the top of the page
-        and the top of the sidebar nav, remove position fixed */
-        if ($(this).scrollTop() < NAVFROMTOP && isPositionFixed)
-        {
-          sidebarNav.css({'position': 'static', 'top': '0px'});
-        }
-      });
-
-      /* For the dialog */
-      var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-example'));
-      document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
-        dialog.lastFocusedTarget = evt.target;
-        dialog.show();
-      });
-
-      /* For the simple Menu */
-      var menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.simple-menu-container'));
-      document.querySelector('.simple-menu-trigger').addEventListener('click', () => menu.open = !menu.open);
-
-      /* For the Snackbar */
-      var snackbar = new mdc.snackbar.MDCSnackbar(document.querySelector('.mdc-snackbar'));
-      $('.snackbar-trigger').click(function() {
-        snackbar.show({
-          actionOnBottom: true,
-          message: 'You are the coolest!',
-          actionText: 'Thanks',
-          actionHandler: function() {
-           console.log("Stuff is working!");
-         }
-        });
-      });
-    </script>
-
+    <script type="text/javascript" src="js/functionality.js"></script>
+    <script type="text/javascript" src="js/expansions.js"></script>
     <script type="text/javascript">window.mdc.autoInit();</script>
 
   </body>
