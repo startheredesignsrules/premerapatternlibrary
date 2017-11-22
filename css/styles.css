@@ -1,58 +1,15 @@
-:root {
-  --mdc-theme-primary: #FF7C76;
-  --mdc-theme-primary-light: red;
-  --mdc-theme-primary-dark: orange;
-  --mdc-theme-secondary: #FF7C76;
-  --mdc-theme-secondary-light: yellow;
-  --mdc-theme-secondary-dark:green;
-  --mdc-theme-background: #f6f6f6;
-  --mdc-theme-text-primary-on-primary: white;
-  --mdc-theme-text-secondary-on-primary: rgba(255, 255, 255, 0.7);
-  --mdc-theme-text-hint-on-primary: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-disabled-on-primary: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-icon-on-primary: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-primary-on-primary-light: rgba(0, 0, 0, 0.87);
-  --mdc-theme-text-secondary-on-primary-light: rgba(0, 0, 0, 0.54);
-  --mdc-theme-text-hint-on-primary-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-disabled-on-primary-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-icon-on-primary-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-primary-on-primary-dark: white;
-  --mdc-theme-text-secondary-on-primary-dark: rgba(255, 255, 255, 0.7);
-  --mdc-theme-text-hint-on-primary-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-disabled-on-primary-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-icon-on-primary-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-primary-on-secondary: white;
-  --mdc-theme-text-secondary-on-secondary: rgba(255, 255, 255, 0.7);
-  --mdc-theme-text-hint-on-secondary: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-disabled-on-secondary: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-icon-on-secondary: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-primary-on-secondary-light: rgba(0, 0, 0, 0.87);
-  --mdc-theme-text-secondary-on-secondary-light: rgba(0, 0, 0, 0.54);
-  --mdc-theme-text-hint-on-secondary-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-disabled-on-secondary-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-icon-on-secondary-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-primary-on-secondary-dark: white;
-  --mdc-theme-text-secondary-on-secondary-dark: rgba(255, 255, 255, 0.7);
-  --mdc-theme-text-hint-on-secondary-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-disabled-on-secondary-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-icon-on-secondary-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
-  --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
-  --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
-  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
-  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
-  --mdc-theme-text-primary-on-dark: white;
-  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
-  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
-  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5); }
+/* styles.scss
+   This stylesheet uses the BEM (Block Element Modifier) naming convention,
+   which is what's being used by Google for Material Components Web.
 
-/* PATTERN LIBRARY ONLY
+   See links for reference:
+     * http://getbem.com/naming/
+     * https://css-tricks.com/bem-101/
+*/
+/* PATTERN LIBRARY STYLES
+   These styles are specific to this microsite ONLY. They are NOT
+   relevant to code used in our Premera website, and should not
+   be passed on to our engineering team.
 =============================================================== */
 /* Ensure layout covers the entire screen. */
 html {
@@ -66,11 +23,8 @@ body {
   box-sizing: border-box;
   min-height: 100%; }
 
-h2 {
-  margin-bottom: 10px; }
-
-/* Make page layout float properly */
-.page-background-hero {
+/* Position the hero at the top of the page BEHIND the page content. */
+.page__hero {
   background-color: #EFEFEF;
   position: absolute;
   height: 400px;
@@ -80,7 +34,13 @@ h2 {
   width: 100%;
   z-index: 1; }
 
-.page-container {
+.page__header {
+  max-width: 1366px;
+  margin: 40px;
+  z-index: 10; }
+
+.page__container {
+  background-color: white;
   display: flex;
   flex: 1 1 auto;
   height: 100%;
@@ -88,89 +48,48 @@ h2 {
   max-width: 1366px;
   z-index: 10; }
 
-header {
-  max-width: 1366px;
-  margin: 40px;
-  z-index: 10; }
-
-.main-content-area {
-  background-color: white; }
-
-.main-sidebar {
+/* Navigation */
+.page__navigation-container {
   border-right: 1px solid #DDD; }
+  .page__navigation-container .page__navigation {
+    /* Allow the nav itemns to wrap */ }
+    .page__navigation-container .page__navigation .page__navigation__category {
+      padding: 10px 0; }
+      .page__navigation-container .page__navigation .page__navigation__category .page__navigation__category-header {
+        font-weight: 800; }
+    .page__navigation-container .page__navigation .mdc-list-item {
+      white-space: normal; }
 
-.main-content {
+/* Main Content */
+.page__content {
   padding: 40px; }
+  .page__content .page__pattern-category {
+    font-size: 3.5rem;
+    margin-bottom: 80px; }
+  .page__content .pattern {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 120px;
+    padding-bottom: 60px; }
+    .page__content .pattern .pattern__usage {
+      margin-bottom: 30px; }
 
-.usage-section {
-  margin-bottom: 30px; }
-
-.nav-header {
-  font-weight: 800; }
-
-#back-to-top-btn {
+/* Position the Back To Top button */
+#btn--back-to-top {
   bottom: 40px;
   position: fixed;
   right: 40px;
   z-index: 10; }
 
-/* Make the top header not pink */
-.mdc-toolbar__row {
-  background-color: #0099d8; }
-
+/* Cards */
+/* Add a photo to the media section of all example cards */
 .example-card .mdc-card__media {
   background-image: url("https://www.premera.com/images/Style_Guide/Jumbotron_Woman_650x275.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  /* Note: Height works in conjunction with height of card */ }
+  height: 200px; }
 
-/* Give the navigation links a hover style */
-.mdc-permanent-drawer .mdc-list-item {
-  padding-left: 30px; }
-  .mdc-permanent-drawer .mdc-list-item:hover {
-    background-color: #EFEFEF; }
-
-/* HELPER CLASSES
-=============================================================== */
-.lead {
-  font-size: 130%;
-  margin-bottom: 40px; }
-
-.code-container {
-  background-color: #EFEFEF;
-  box-sizing: border-box;
-  font-family: monospace;
-  font-size: 16px;
-  min-height: 150px;
-  width: 100%; }
-
-.section-header {
-  font-size: 3.5rem;
-  margin-bottom: 80px; }
-
-.pattern-section {
-  border-bottom: 1px solid #DDD;
-  margin-bottom: 120px;
-  padding-bottom: 60px; }
-
-.d-none {
-  display: none; }
-
-.float-right {
-  float: right; }
-
-.sidebar-nav-container li.nav-section {
-  padding: 10px 0; }
-
-/* Material Overrides For Premera Branding
-=============================================================== */
-/* Properly position icon inside of button */
-.mdc-button .material-icons {
-  position: relative;
-  top: 6px;
-  margin-right: 10px; }
-
+/* Grid Layout */
+/* Color the grid so people can see how it works */
 .mdc-layout-grid {
   background-color: #EEEEEE; }
   .mdc-layout-grid .mdc-layout-grid__inner {
@@ -178,27 +97,70 @@ header {
     .mdc-layout-grid .mdc-layout-grid__inner .mdc-layout-grid__cell {
       background-color: #AAAAAA; }
 
-.page-container .main-sidebar .mdc-list-item {
-  white-space: normal; }
-
-/* MATERIAL COMPONENTS WEB OVERRIDES / Pass on to dev
+/* HELPER CLASSES
+   These classes have been borrowed from Bootstrap 4.0. In our
+   upcoming website redesign, we might not be using Bootstrap
+   beyond the Grid System, so we will need SOME replacement
+   for these classes, probably.
 =============================================================== */
-.mdc-card__actions.expandable-actions {
-  justify-content: space-between; }
+.lead {
+  font-size: 130%;
+  margin-bottom: 40px; }
 
-/* New List Style */
-.mdc-list.mdc-list--separated li {
-  border-bottom: 1px solid #CCC; }
-  .mdc-list.mdc-list--separated li:last-child {
-    border: none; }
+.d-none {
+  display: none; }
 
-.mdc-card__supporting-text.mdc-card__list {
-  padding: 0; }
-  .mdc-card__supporting-text.mdc-card__list ul {
-    margin: 0;
+.float-right {
+  float: right; }
+
+/* MATERIAL COMPONENTS WEB : OVERRIDES AND EXPANSIONS
+   Ideally this is clean, modular, smart code we can pass on to
+   our development team for use in the redesign.
+=============================================================== */
+/* COLOR THEMING */
+:root {
+  --mdc-theme-primary: #FF7C76;
+  --mdc-theme-secondary: #FF7C76;
+  --mdc-theme-background: #f6f6f6; }
+
+/* BUTTONS */
+.mdc-button {
+  /* Out of the box, the icons inside of buttons are not properly positioned.
+     Perhaps they will fix this in a future update. For now... */ }
+  .mdc-button .material-icons {
+    position: relative;
+    top: 6px;
+    margin-right: 10px; }
+
+/* LISTS */
+.mdc-list {
+  /* Create NEW LIST STYLE that has full-width borders between list items and appropriate padding */
+  /* New modifier class */ }
+  .mdc-list.mdc-list--separated {
     padding: 0; }
-    .mdc-card__supporting-text.mdc-card__list ul li {
+    .mdc-list.mdc-list--separated li {
+      border-bottom: 1px solid #CCC;
       padding-left: 20px;
       padding-right: 20px; }
+      .mdc-list.mdc-list--separated li:last-child {
+        border: none; }
+
+/* CARDS */
+.mdc-card {
+  /* If card has a right-aligned expand button, .mdc-card__actions needs to allow right-aligning */
+  /* TO DO : This actually will not work if there are 2 buttons in addition to the expanding button */
+  /* Existing mdc class */
+  /* When a card's supporting text is actually a list, modify the container to allow list to be full width. */
+  /* Existing mdc class */ }
+  .mdc-card .mdc-card__actions {
+    /* New modifier class */ }
+    .mdc-card .mdc-card__actions.mdc-card__actions--justified {
+      justify-content: space-between; }
+  .mdc-card .mdc-card__supporting-text {
+    /* New modifier class */ }
+    .mdc-card .mdc-card__supporting-text.mdc-card--list {
+      padding: 0; }
+      .mdc-card .mdc-card__supporting-text.mdc-card--list ul {
+        margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */
