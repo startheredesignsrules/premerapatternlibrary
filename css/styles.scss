@@ -1,6 +1,6 @@
 /* styles.scss
    This stylesheet contains styles that are ONLY relevant to the Pattern Library microsite.
-   
+
    This stylesheet uses the BEM (Block Element Modifier) naming convention,
    which is what's being used by Google for Material Components Web.
 
@@ -117,6 +117,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+}
+
+.example-card .mdc-card__author__avatar {
+  background-color: #CCC;
 }
 
 

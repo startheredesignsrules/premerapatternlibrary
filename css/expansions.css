@@ -1,6 +1,6 @@
 /* overrides.scss
    This stylesheet contains overrides and expansions to Material Components Web.
-   
+
    This stylesheet uses the BEM (Block Element Modifier) naming convention,
    which is what's being used by Google for Material Components Web.
 
@@ -58,11 +58,57 @@
 
 /* CARDS */
 .mdc-card {
+  /* Add a new class to modify the media section for video */
+  /* Existing MDC class */
   /* If card has a right-aligned expand button, .mdc-card__actions needs to allow right-aligning */
   /* TO DO : This actually will not work if there are 2 buttons in addition to the expanding button */
   /* Existing mdc class */
   /* When a card's supporting text is actually a list, modify the container to allow list to be full width. */
   /* Existing mdc class */ }
+  .mdc-card .mdc-card__author {
+    padding: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 82px; }
+    .mdc-card .mdc-card__author .mdc-card__author__avatar {
+      width: 40px;
+      height: 40px;
+      margin-left: 0;
+      margin-right: 16px;
+      border-radius: 50%; }
+    .mdc-card .mdc-card__author .mdc-card__title--small {
+      color: #707070;
+      font-size: 14px; }
+  .mdc-card .mdc-card__media {
+    /* New modifier class */
+    /* New modifier class */ }
+    .mdc-card .mdc-card__media.mdc-card__media--video {
+      padding: 0 !important; }
+      .mdc-card .mdc-card__media.mdc-card__media--video .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0; }
+        .mdc-card .mdc-card__media.mdc-card__media--video .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+    .mdc-card .mdc-card__media.mdc-card__media--thumb img {
+      height: auto;
+      width: 100%; }
   .mdc-card .mdc-card__actions {
     /* New modifier class */ }
     .mdc-card .mdc-card__actions.mdc-card__actions--justified {
