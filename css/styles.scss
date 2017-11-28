@@ -32,6 +32,10 @@ body {
   min-height: 100%;
 }
 
+a {
+  font-weight: 800;
+}
+
 /* Position the hero at the top of the page BEHIND the page content. */
 .page__hero {
   background-color: #EFEFEF;
@@ -70,7 +74,8 @@ body {
       padding: 10px 0;
 
       .page__navigation__category-header {
-        font-weight: 800;
+        color: #555;
+        font-weight: 500;
       }
     }
 
@@ -97,6 +102,15 @@ body {
 
     .pattern__usage {
       margin-bottom: 30px;
+    }
+
+    .pattern__usage__guide-link {
+
+      .material-icons {
+        font-size: 16px;
+        position: relative;
+        top: 3px;
+      }
     }
   }
 }

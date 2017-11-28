@@ -34,6 +34,22 @@
   --mdc-theme-secondary: #FF7C76;
   --mdc-theme-background: #f6f6f6; }
 
+/* All the stuff I couldn't figure out that would really help us
+   customize in a highly specific and targeted way. */
+   /*
+
+   $unmarked-stroke-color: pink;
+   $unmarked-fill-color: green;
+   $marked-fill-color: orange;
+   $generate-keyframes: red;
+
+   @import '@material/checkbox/mixins';
+
+   .mdc-checkbox {
+     @include mdc-checkbox-container-colors(red, orange, yellow, green);
+   }
+
+   */
 /* BUTTONS */
 .mdc-button {
   /* Out of the box, the icons inside of buttons are not properly positioned.
